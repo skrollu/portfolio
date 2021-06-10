@@ -15,7 +15,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
+  min-height: 400px;
+  height: 85vh;
   background-color: rgb(34, 34, 34);
 
 }
@@ -23,12 +24,19 @@ header {
 header h1 {
   color: white;
   font-size: 5rem;
+  max-width: 80%;
+}
+
+.arrows-container {
+  position: absolute;
+  
+  left: 50%;
+  bottom: 80px;
 }
 
 .arrow {
   position: absolute;
-  bottom: 50px;
-  left: 50%;
+  top: 0;
   transform: translate(-50%, -50%);
 
   height: 50px;
@@ -40,7 +48,7 @@ header h1 {
 }
 
 .arrow:nth-child(2) {
-  bottom: 25px;
+  top: 25px;
 }
 
 /* @keyframes arrows-slide {
@@ -48,3 +56,8 @@ header h1 {
     bottom: 40px;
   }
 } */
+
+.faucon {
+  position: absolute;
+  bottom: 0;
+}
