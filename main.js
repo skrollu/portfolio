@@ -8,7 +8,7 @@ gsap.registerPlugin(TextPlugin)
 const cursor = document.querySelector('.cursor')
 gsap.to(cursor, { duration: 0.7, opacity: 0, repeat: -1, ease: 'power3.in'})
 
-const words2 = [ "Hello :)", "My name is Mathieu, a Fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
+const words2 = [ "Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
 
 const presentationCompleted = (event) => {
     
@@ -30,8 +30,9 @@ const presentationCompleted = (event) => {
     header.appendChild(arrowsDiv)
 
     //Arrows infinite timeline
-    const arrowTimeline = gsap.timeline({ yoyo: true, repeat: -1 });
-    arrowTimeline.to(arrowsDiv, { duration: 0.7, y: 20, ease: 'power2.in' })
+    const arrowTimeline = gsap.timeline();
+    arrowTimeline.from(arrowsDiv,{ duration: 0.5, alpha: 0 })
+    arrowTimeline.to(arrowsDiv, { duration: 0.7, y: 20, yoyo: true, repeat: -1, ease: 'power2.in' })
 
     finishPresentationTL.add(arrowTimeline, '>');
 }
