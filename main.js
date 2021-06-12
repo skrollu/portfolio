@@ -38,16 +38,18 @@ const presentationCompleted = (event) => {
 }
 
 const presentationTimeline = gsap.timeline({ onComplete: presentationCompleted});
-presentationTimeline.to('cursor', { duration: 1, y: 50})
+presentationTimeline.to('cursor', { duration: 1, y: 50, ease: "none"})
 
 words2.forEach((word, index) => {
     let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1});
     tl.to(".text", {
-        duration: 1,
-        text: {
-            value: word,
-        }
-    })
+            duration: 1,
+            text: {
+                value: word,
+            },
+        },
+        "+=0.1"
+    )
 
     switch(index) {
         case 0: 
