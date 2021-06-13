@@ -9,7 +9,91 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+/*
+SIDE BAR
+*/
+.side-bar {
+  position: fixed;
+  z-index: 1;
+  transform: translate(-400px);
+  min-width: 400px;
+  height: 100vh;
+  color: white;
+  background-color: transparent;
+  transition: 0.5s ease;
+}
 
+.side-bar-container {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.side-bar h2 {
+  font-size: 3rem;
+}
+
+.side-bar img {
+  height: 20px;
+  color: cyan
+}
+
+.side-bar ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.side-bar li {
+ display: flex;
+ align-items: center;
+}
+
+.side-bar a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+  font-size: 2rem;
+}
+
+/*
+Open Close Contact btn 
+*/
+.openContact {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.btn-openCloseContact {
+  position: relative;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+
+  background-color: transparent;
+  border-top: 2px solid white; 
+  border-bottom: 2px solid white;
+
+  transition: 0.5s ease;
+}
+
+.btn-openCloseContact::after{
+  content: "";
+  position: absolute;  
+  top: 10;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100%;
+
+  background-color: crimson;
+}
+
+/*
+HEADER
+*/
 header {
   position: relative;
   display: flex;
@@ -25,6 +109,7 @@ header h1 {
   color: white;
   font-size: 5rem;
   max-width: 80%;
+  user-select: none;
 }
 
 .arrows-container {

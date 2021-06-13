@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
-    <title>Skrollu</title>
-  </head>
-  <body>
-      <header class="header">
-        <h1>
-            <span class="text"></span><span class="cursor">|</span>
-        </h1>
-
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
   
-
-<!--         <div class="arrows-container">
-          <div class="arrow"></div>
-          <div class="arrow"></div>
-        </div> -->
-      </header>
-<!--             <svg class="faucon" width="100%" height="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
-              <path d="M 100 100 L 300 100 L 200 300 z" fill="red" stroke-width="3" />
-            </svg> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Skrollu</title>
+</head>
+<body>
+  
+  <nav class="side-bar">
+    <div class="side-bar-container">
+      <h2>Contact me:</h2>
+      <ul>
+        <li><img src="./img/linkedIn.svg"><a href="#">Linked in</a></li>
+        <li><img src="./img/github.svg"><a href="#">Github</a></li>
+        <li><img src="./img/email.svg"><a href="mailto:matiber76@gmail.com">matiber76@gmail.com</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <header class="header">
+    <div class="openContact">
+      <button class="btn-openCloseContact" onclick="openCloseContact()"></button>
+    </div>
     
-
-    <script type="module" src="/main.js"></script>
-  </body>
+    <h1>
+      <span class="text"></span><span class="cursor">|</span>
+    </h1>
+    
+    <!--    
+      <div class="arrows-container">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div> 
+    -->
+  </header>
+  <!--            
+    <svg class="faucon" width="100%" height="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <path d="M 100 100 L 300 100 L 200 300 z" fill="red" stroke-width="3" />
+    </svg>
+  -->
+  <main class="main-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem quae rerum sequi, repudiandae architecto distinctio maiores inventore! Totam sapiente magni omnis, minima impedit delectus eaque eligendi corporis provident sint.
+  </main>
+  
+  <script type="module" src="/main.js"></script>
+  <script src="/sideBar.js"></script>
+</body>
 </html>
