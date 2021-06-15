@@ -1,5 +1,5 @@
 const sideBar = document.querySelector('.side-bar');
-const openCloseBtn = document.querySelector('.btn-openCloseContact')
+const openCloseBtn = document.querySelector('.openCloseContact')
 
 let openClose = 0; //1 for open
 
