@@ -13,5 +13,4 @@ const openCloseContact = (e) => {
         sideBar.style.transform = `translateX(${-400}px)`;
         openCloseBtn.style.left = `10px`
     }
-    console.log("héhé", openClose)
 }
