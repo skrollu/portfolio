@@ -1,0 +1,75 @@
+.grid-one {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 10px;
+    background-color: red;
+}
+
+.grid-element {
+    height: 300px;
+    min-height: 300px;
+
+    width: 400px;
+    max-width: 500px;
+
+    background-color: orange;
+
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.card::after {
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    left: -5px;
+    clip-path: circle(20px);
+    background-color: purple;
+}
+
+.card::before {
+    position: absolute;
+    z-index: 2;
+    bottom: -10px;
+    left: -5px;
+    clip-path: circle(20px);
+    background-color: pink;
+}
+
+/*
+.card .card-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ */
+ 
+.card .inner-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+
+    border-top: 2px rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(500px); 
+
+    transform: translateY(100%);
+    transition: 0.3s ease-in;
+}
+
+.card:hover .inner-card {
+    transform: translateY(0%);
+}
