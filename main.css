@@ -26,34 +26,12 @@
     background-color: rgb(48, 48, 48);
 }
 
-.card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 50px;
-    background-color: purple;
-}
 
-.card::before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: -5px;
-    height: 150px;
-    width: 150px;
-    clip-path: circle(120px);
-    background-color: purple;
-}
-
-/*
 .card .card-content {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
- */
  
 .card .inner-card {
     position: absolute;
