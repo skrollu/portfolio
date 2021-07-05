@@ -1,3 +1,4 @@
+/*
 const one = document.querySelector('#one')
 
 one.addEventListener("mouseover", (e) => {
@@ -6,3 +7,4 @@ one.addEventListener("mouseover", (e) => {
     popDesc.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`)
     one.appendChild(popDesc)
 })
+*/

@@ -35,13 +35,13 @@
  
 .card .inner-card {
     position: absolute;
-    z-index: 2;
     bottom: 0;
     left: 0;
     height: 200px;
     width: 100%;
 
     border-top: 2px rgba(255,255,255,0.5);
+    box-shadow: inset 0px 10px 10px rgba(255,255,255,0.5);
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -52,6 +52,15 @@
 
 .card:hover .inner-card {
     transform: translateY(0%);
+}
+
+.card .inner-card h3 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 .desc-grid {
