@@ -8,3 +8,15 @@ one.addEventListener("mouseover", (e) => {
     one.appendChild(popDesc)
 })
 */
+
+const cards = document.querySelectorAll('.card');
+console.log(cards)
+let selectedElement = null;
+
+cards.forEach(elem => {
+    elem.addEventListener('click', e => {
+        selectedElement != null && selectedElement.classList.remove('selected');
+        elem.classList.add('selected');
+        selectedElement = elem;
+    })
+})
