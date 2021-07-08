@@ -1,79 +1,37 @@
-gsap.registerPlugin(TextPlugin)
+/*
+const one = document.querySelector('#one')
 
-// PRESENTATION TIMELINE
-
-const cursor = document.querySelector('.cursor')
-gsap.to(cursor, { duration: 0.7, opacity: 0, repeat: -1, ease: 'power3.in'})
-
-const words2 = [ "Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
-
-const presentationCompleted = (event) => {
-    
-    const finishPresentationTL = gsap.timeline();
-
-    //erase cursor
-    finishPresentationTL.to(cursor, { duration: 1, opacity: 0, onComplete: () => { cursor.parentNode.removeChild(cursor) }})
-    
-    //ARROWS 
-    let header = document.querySelector('header');
-    let arrowsDiv = document.createElement('div');
-    arrowsDiv.className += "arrows-container"
-    let arrow1Div = document.createElement('div')
-    let arrow2Div = document.createElement('div')
-    arrow1Div.className += "arrow"
-    arrow2Div.className += "arrow"
-    arrowsDiv.appendChild(arrow1Div)
-    arrowsDiv.appendChild(arrow2Div)
-    header.appendChild(arrowsDiv)
-
-    //Arrows infinite timeline
-    const arrowTimeline = gsap.timeline();
-    arrowTimeline.from(arrowsDiv,{ duration: 0.5, alpha: 0 })
-    arrowTimeline.to(arrowsDiv, { duration: 0.7, y: 20, yoyo: true, repeat: -1, ease: 'power2.in' })
-
-    finishPresentationTL.add(arrowTimeline, '>');
-}
-
-const presentationTimeline = gsap.timeline({ onComplete: presentationCompleted});
-presentationTimeline.to('cursor', { duration: 1, y: 50, ease: "none"})
-
-words2.forEach((word, index) => {
-    let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1});
-    tl.to(".text", {
-            duration: 1,
-            text: {
-                value: word,
-            },
-        },
-        "+=0.1"
-    )
-
-    switch(index) {
-        case 0: 
-            break;
-        case 1: 
-            tl.duration(2)
-            tl.repeatDelay(2)
-            break;
-        case 2:
-            tl.duration(1.5)
-            tl.repeatDelay(2)
-            break;
-        case 3:
-            tl.duration(3.5)
-            tl.repeatDelay(2)
-            break;
-        case 4:
-            tl.duration(2)
-            tl.repeatDelay(1)
-            break;
-        case 5:
-            tl.duration(2)
-            tl.repeatDelay(1)
-            break;
-        default: 
-            tl.repeatDelay(1)
-            break;
-    }
-    presentationTimeline.add(tl);
+one.addEventListener("mouseover", (e) => {
+    var popDesc = document.createElement("div");
+    popDesc.setAttribute('class', 'pop-desc')
+    popDesc.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`)
+    one.appendChild(popDesc)
 })
+*/
+
+const cards = document.querySelectorAll('.card');
+const description = document.querySelector('.description');
+let selectedElement = null;
+
+const descriptions = [
+    "Gaumont is a work in progress project to recreate the real Gaumont website in Angular. With it I learned about the leaflet library to display points on a map and interact with them. This project is also where I discovered lots of CSS tricks and my love for styling website. Recently I worked on third party connection with passport.js but I didn't find the time to finish it... Every datas of this project come from my own API-project: <a href=\"https://github.com/skrollu/express-mongo-api\">express-mongo-api</a>",
+    "Immob Announce is a project made in my 2nd year of MSc. It reproduces the concept of the famous website: Leboncoin.fr. Classic CRUD ad management for super user and Q&A possibility for the \"client\". Immob Annouce is also able to manage image files thanks to file thank to multer library. This project run with a Node Express server with a MongoDB and expose html template with pug technology.",
+    "Highly inspired VueX project to try what's in my mind on new technologies to me."
+]
+
+let cardsList = [];
+cards.forEach((card, index) => {
+    cardsList.push({ index: index, card: card, value: descriptions[index]} );
+})
+
+cardsList.forEach(elem => {
+    elem.card.addEventListener('click', e => {
+        selectedElement != null && selectedElement.classList.remove('selected');
+        elem.card.classList.add('selected');
+        selectedElement = elem.card;
+
+        description.innerHTML = elem.value
+    })
+})
+
+

@@ -5,9 +5,10 @@
   <link rel="icon" type="image/svg+xml" href="./img/favico.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./main.css" />
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
     integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
@@ -52,10 +53,56 @@
     </svg>
   -->
   <main class="main-content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem quae rerum sequi, repudiandae architecto distinctio maiores inventore! Totam sapiente magni omnis, minima impedit delectus eaque eligendi corporis provident sint.
+    
+    <section id="first-section" class="section">
+      <div class="grid-container">
+        <div class="grid-one">
+          
+          <div class="grid-element ">
+            <div class="card">
+              <img class="card-content" src="./public/gif/Gaumont.gif">
+              <a href="https://github.com/skrollu/angular-gaumont"> </a>
+              <div class="inner-card">
+                <h3>Gaumont Angular</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid-element two">
+            <div class="card">
+              <img class="card-content" src="./public/gif/ImmobAnnounce.gif">
+              <div class="inner-card">
+                <h3>Immob Annouce</h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid-element three">
+            <div class="card">
+              <img class="card-content" src="./public/gif/VueX.gif">
+              <div class="inner-card">
+                <h3>Vue.js/VueX learning</h3>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="desc-grid">
+          <p class="description">
+          </p>
+        </div>
+      </div>
+
+      <div class="second-text">
+        (Continuer l'animation)
+
+        As I worked a lot on React/Redux during my MSc, I wanted to learn the other tendance JS frameworks. I started with Angular with a complete project, Gaumont which is still work in progress. I also try Vue.js/VueX which I found really easier. 
+      </div>
+    </section>
+    
   </main>
-   
-  <script type="module" src="./main.js"></script>
-  <script src="./sideBar.js"></script>
+  
+  <script type="module" src="/header.js"></script>
+  <script src="/sideBar.js"></script>
+  <script src="/main.js"></script>
+
 </body>
 </html>
