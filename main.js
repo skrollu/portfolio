@@ -39,7 +39,7 @@ const timeline = gsap.timeline({
     }
 });
 
-const textHelperWords = "Hovered the different projects to learn more about them...";
+const textHelperWords = "Hover the different projects to learn more about them...";
 timeline.from(helper, 1, { x: 600, ease: 'power3.inOut'})
         let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1});
         tl.to(".text-helper", {
