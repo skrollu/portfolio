@@ -2,28 +2,36 @@
     
 }
 
+.helper {
+    position: fixed;
+    z-index: 1000;
+
+    top: 20%;
+    right: -10%;
+    height: 250px;
+    width: 550px;
+    background: orange;
+    border-radius: 15%;
+    
+    font-size: 2.8rem;
+    color: white;
+    padding: 20px;
+    padding-right: calc(10% + 20px);
+}
+
 .section {
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
-.helper {
-    position: fixed;
-    z-index: 1000;
-    top: 50%;
-    right: -10%;
-    transform: translateY(-50%);
-    height: 400px;
-    width: 600px;
-    background: orange;
-    border-radius: 10%;
-
+.hovered-card {
+    color: rgb(48, 48, 48);
     font-size: 4rem;
-    color: white;
-    padding: 20px;
-    padding-right: calc(10% + 20px);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .grid-one {
@@ -45,53 +53,33 @@
 }
 
 .selected {
-    border: 5px solid orchid;
+    position: relative;
+    box-shadow: none;
+    transition: box-shadow 3s ease-out;
+}
+
+.selected:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px -2px 10px rgb(77, 5, 11), -1px 1px 6px rgb(73, 8, 21);
 }
 
 .card {
     cursor: pointer;
     height: 100%;
     width: 100%;
-    overflow: hidden;
     position: relative;
     background-color: rgb(48, 48, 48);
 }
-
 
 .card .card-content {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.card .inner-card {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 200px;
-    width: 100%;
-    
-    border-top: 2px rgba(255,255,255,0.5);
-    box-shadow: inset 0px 10px 10px rgba(255,255,255,0.5);
-    background-color: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    
-    transform: translateY(100%);
-    transition: 0.3s ease-in;
-}
-
-.card:hover .inner-card {
-    transform: translateY(0%);
-}
-
-.card .inner-card h3 {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    font-weight: 600;
 }
 
 .desc-grid {
@@ -109,15 +97,6 @@
     font-weight: 400;
     text-align: justify;
 }
-/* 
-.pop-desc {
-    position: absolute;
-    z-index: 1000;
-    height: 500px;
-    width: 700px;
-    border: 3px solid black;
-}
-*/
 
 @media screen and (min-width: 1900px) {
     .grid-one {
