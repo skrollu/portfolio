@@ -1,3 +1,6 @@
+gsap.registerPlugin(TextPlugin)
+gsap.registerPlugin(ScrollTrigger)
+
 /*
 const one = document.querySelector('#one')
 
@@ -35,3 +38,25 @@ cardsList.forEach(elem => {
 })
 
 
+
+const helper = document.querySelector('.helper')
+const timeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#first-section",
+        start: "top 80%",
+        //markers: true,
+    }
+});
+
+const textHelperWords = "You can click on the different projects to learn more about them...";
+timeline.from(helper, 1, { x: 600, ease: 'power3.inOut'})
+        let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1});
+        tl.to(".text-helper", {
+                duration: 2,
+                text: {
+                    value: textHelperWords,
+                },
+            }
+        )
+        timeline.add(tl)
+        .to(helper, 1, { x: 600, ease: 'power3.inOut'}, "+=.3");

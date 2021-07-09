@@ -14,11 +14,13 @@
     integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+  <!-- GSAP: ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 
   <title>Skrollu</title>
 </head>
 <body>
-  
+
   <nav class="side-bar">
     <div class="side-bar-container">
       <h2>Contact me:</h2>
@@ -47,13 +49,18 @@
       </div> 
     -->
   </header>
+
   <!--            
     <svg class="faucon" width="100%" height="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
       <path d="M 100 100 L 300 100 L 200 300 z" fill="red" stroke-width="3" />
     </svg>
   -->
   <main class="main-content">
-    
+
+    <div class="helper">
+      <span class="text-helper"></span><span class="cursor">|</span>
+    </div>
+
     <section id="first-section" class="section">
       <div class="grid-container">
         <div class="grid-one">
@@ -100,9 +107,9 @@
     
   </main>
   
-  <script type="module" src="./portfolio/header.js"></script>
+  <script type="module" src="./header.js"></script>
   <script src="sideBar.js"></script>
-  <script src="main.js"></script>
+  <script type="module" src="main.js"></script>
 
 </body>
 </html>

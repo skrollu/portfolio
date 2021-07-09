@@ -3,9 +3,27 @@
 }
 
 .section {
+    position: relative;
     padding: 100px 0;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.helper {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    height: 400px;
+    width: 600px;
+    background: orange;
+    border-radius: 10%;
+
+    font-size: 4rem;
+    color: white;
+    padding: 20px;
+    padding-right: calc(10% + 20px);
 }
 
 .grid-one {
@@ -27,7 +45,7 @@
 }
 
 .selected {
-    border: 5px solid rgb(184, 19, 74);
+    border: 5px solid orchid;
 }
 
 .card {

@@ -1,14 +1,11 @@
-import gsap from 'gsap'
-import TextPlugin from 'gsap/TextPlugin'
-
 gsap.registerPlugin(TextPlugin)
 
 // PRESENTATION TIMELINE
 
-const cursor = document.querySelector('.cursor')
+const cursor = document.querySelectorAll('.cursor')
 gsap.to(cursor, { duration: 0.7, opacity: 0, repeat: -1, ease: 'power3.in'})
 
-const words2 = [ "Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
+const words = [ "Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
 
 const presentationCompleted = (event) => {
     
@@ -40,7 +37,7 @@ const presentationCompleted = (event) => {
 const presentationTimeline = gsap.timeline({ onComplete: presentationCompleted});
 presentationTimeline.to('cursor', { duration: 1, y: 50, ease: "none"})
 
-words2.forEach((word, index) => {
+words.forEach((word, index) => {
     let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1});
     tl.to(".text", {
             duration: 1,
