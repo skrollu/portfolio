@@ -11,16 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
-    crossorigin="anonymous"></script>
+  integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
   <!-- GSAP: ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-
+  
   <title>Skrollu</title>
 </head>
 <body>
-
+  
   <nav class="side-bar">
     <div class="side-bar-container">
       <h2>Contact me:</h2>
@@ -48,58 +48,48 @@
       </div> 
     -->
   </header>
-
+  
   <!--            
     <svg class="faucon" width="100%" height="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
       <path d="M 100 100 L 300 100 L 200 300 z" fill="red" stroke-width="3" />
     </svg>
   -->
   <main class="main-content">
-
+    
     <div class="helper">
       <span class="text-helper"></span><span class="cursor">|</span>
     </div>
-
+    
     <section id="first-section" class="section">
-
+      
       <h3 class="hovered-card"></h3>
-
-      <div class="grid-container">
-        <div class="grid-one">
-          
-          <div class="grid-element ">
-            <div class="card">
-              <a href="https://github.com/skrollu/angular-gaumont">
-                <img class="card-content" src="./public/gif/Gaumont.gif">
-              </a>
-            </div>
-          </div>
-          <div class="grid-element two">
-            <div class="card">
-              <a href="https://github.com/skrollu/angular-gaumont">
-                <img class="card-content" src="./public/gif/ImmobAnnounce.gif">
-              </a>
-            </div>
-          </div>
-          <div class="grid-element three">
-            <div class="card">
-              <a href="https://github.com/skrollu/angular-gaumont">
-                <img class="card-content" src="./public/gif/VueX.gif">
-              </a>
-            </div>
-          </div>
+      
+      <div class="grid-one">
+        <div class="card">
+          <a href="https://github.com/skrollu/angular-gaumont">
+            <img class="card-content" src="./public/gif/Gaumont.gif">
+          </a>
         </div>
 
-        <div class="desc-grid">
-          <p class="description">
-          </p>
+        <div class="card">
+          <a href="https://github.com/skrollu/angular-gaumont">
+            <img class="card-content" src="./public/gif/ImmobAnnounce.gif">
+          </a>
         </div>
-
+        
+        <div class="card">
+          <a href="https://github.com/skrollu/angular-gaumont">
+            <img class="card-content" src="./public/gif/VueX.gif">
+          </a>
+        </div>
       </div>
-
+      
+      <div class="desc-grid">
+        <p class="description">
+        </p>
+      </div>
+      
       <div class="second-text">
-        (Continuer l'animation)
-
         As I worked a lot on React/Redux during my MSc, I wanted to learn the other tendance JS frameworks. I started with Angular with a complete project, Gaumont which is still work in progress. I also try Vue.js/VueX which I found really easier. 
       </div>
     </section>
@@ -109,6 +99,6 @@
   <script type="module" src="./header.js"></script>
   <script src="sideBar.js"></script>
   <script type="module" src="main.js"></script>
-
+  
 </body>
 </html>
