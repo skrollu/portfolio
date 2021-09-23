@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./public/img/favico.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="./css/sideBar.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -14,7 +15,6 @@
   integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
-  <!-- GSAP: ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
   
   <title>Skrollu</title>
@@ -55,11 +55,11 @@
     </svg>
   -->
   <main class="main-content">
-    
+<!--     
     <div class="helper">
       <span class="text-helper"></span><span class="cursor">|</span>
     </div>
-    
+     -->
     <section id="first-section" class="section">
       
       <h3 class="hovered-card"></h3>
@@ -83,7 +83,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="desc-grid">
         <p class="description">
         </p>
@@ -92,13 +92,16 @@
       <div class="second-text">
         As I worked a lot on React/Redux during my MSc, I wanted to learn the other tendance JS frameworks. I started with Angular with a complete project, Gaumont which is still work in progress. I also try Vue.js/VueX which I found really easier. 
       </div>
+ 
+      <img src="./public/gif/backdropFilter.gif" alt="" style="width: 300px;">
+
     </section>
     
   </main>
   
-  <script type="module" src="./header.js"></script>
-  <script src="sideBar.js"></script>
-  <script type="module" src="main.js"></script>
+  <script type="module" src="./js/header.js"></script>
+  <script src="js/sideBar.js"></script>
+  <script type="module" src="js/main.js"></script>
   
 </body>
 </html>

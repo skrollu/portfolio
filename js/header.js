@@ -1,11 +1,10 @@
 gsap.registerPlugin(TextPlugin)
 
 // PRESENTATION TIMELINE
-
 const cursor = document.querySelectorAll('.cursor')
 gsap.to(cursor, { duration: 0.7, opacity: 0, repeat: -1, ease: 'power3.in'})
 
-const words = [ "Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
+const words = [ "<Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
 
 const presentationCompleted = (event) => {
     
