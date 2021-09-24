@@ -9,7 +9,6 @@ const sentences = [ "coucou" ];
 
 // event triggered when presentation is finished
 const presentationCompleted = (event) => {
-    
     const finishPresentationTL = gsap.timeline();
 
     //erase cursor
@@ -35,7 +34,12 @@ const presentationCompleted = (event) => {
     arrowTimeline.from(arrowsDiv,{ duration: 0.5, alpha: 0 })
     arrowTimeline.to(arrowsDiv, { duration: 0.7, y: 20, yoyo: true, repeat: -1, ease: 'power2.in' })
 
-    finishPresentationTL.add(arrowTimeline, '>');
+    finishPresentationTL.add(arrowTimeline, '+0.1');
+
+    // resize header
+    const resizeHeaderTimeline = gsap.timeline();
+    resizeHeaderTimeline.to('.header', { duration: 1, height: 250}) //be carefull height can't be lower than min-height  property
+    finishPresentationTL.add(resizeHeaderTimeline, '+0.1')
 }
 
 const presentationTimeline = gsap.timeline({ onComplete: presentationCompleted});
