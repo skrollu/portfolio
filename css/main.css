@@ -1,7 +1,4 @@
-#first-section {
-    
-}
-
+/*
 .helper {
     position: fixed;
     z-index: 1000;
@@ -18,16 +15,17 @@
     padding: 20px;
     padding-right: calc(10% + 20px);
 }
+*/
 
 .section {
     position: relative;
     padding: 50px 0;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-color: rgba(148,187,233,1);
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
 }
 
-.hovered-card {
-    color: rgb(48, 48, 48);
+.card-title {
+    color: #020024;
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
@@ -47,20 +45,15 @@
     /* background-color: red; */
 }
 
-.selected {
+.active {
     position: relative;
-    box-shadow: none;
-    transition: box-shadow 3s ease-out;
-}
-
-.selected:hover::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    box-shadow: 2px -2px 10px rgb(77, 5, 11), -1px 1px 6px rgb(73, 8, 21);
+    box-shadow: 2px -2px 10px rgb(255, 255, 255), -3px 1px 6px rgb(61, 61, 61);
 }
 
 .card {
@@ -68,28 +61,30 @@
     height: 216px;
     width: 384px;
     position: relative;
-    background-color: rgb(48, 48, 48);
+    overflow: hidden;
+    border-radius: 5px;
 }
 
-.card .card-content {
+.card img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.desc-grid {
+.description-container {
+    margin: auto;
     max-width: 1300px;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
+    height: 500px;
     display: flex;
     justify-content: center;
 }
 
-.desc-grid p {
+.description {
+    margin: 0 10%;
     padding: 20px;
-    font-size: 2.7rem;
-    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
     text-align: justify;
 }
 
