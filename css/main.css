@@ -88,6 +88,10 @@
     text-align: justify;
 }
 
+.description-link {
+    color: rgba(194, 29, 0, 0.986);
+}
+
 @media screen and (min-width: 1900px) {
     .grid-one {
         max-width: 1800px;

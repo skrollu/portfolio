@@ -1,17 +1,22 @@
 gsap.registerPlugin(TextPlugin)
 
 // PRESENTATION TIMELINE
-const cursor = document.querySelectorAll('.cursor')
+const cursor = document.querySelector('.cursor')
 gsap.to(cursor, { duration: 0.7, opacity: 0, repeat: -1, ease: 'power3.in'})
 
-const words = [ "<Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
+//const sentences = [ "Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
+const sentences = [ "coucou" ];
 
+// event triggered when presentation is finished
 const presentationCompleted = (event) => {
     
     const finishPresentationTL = gsap.timeline();
 
     //erase cursor
-    finishPresentationTL.to(cursor, { duration: 1, opacity: 0, onComplete: () => { cursor.parentNode.removeChild(cursor) }})
+    finishPresentationTL.to(cursor, { duration: 1, opacity: 0, onComplete: () => {
+            let presentationText = document.querySelector('.presentation-text');
+            presentationText.removeChild(cursor) 
+        }});
     
     //ARROWS 
     let header = document.querySelector('header');
@@ -34,14 +39,14 @@ const presentationCompleted = (event) => {
 }
 
 const presentationTimeline = gsap.timeline({ onComplete: presentationCompleted});
-presentationTimeline.to('cursor', { duration: 1, y: 50, ease: "none"})
 
-words.forEach((word, index) => {
+//Manage every sentence timeline (duration, repeatDelay settings...)
+sentences.forEach((sentence, index) => {
     let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1});
     tl.to(".text", {
             duration: 1,
             text: {
-                value: word,
+                value: sentence,
             },
         },
         "+=0.1"
