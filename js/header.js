@@ -4,8 +4,8 @@ gsap.registerPlugin(TextPlugin)
 const cursor = document.querySelector('.cursor')
 gsap.to(cursor, { duration: 0.7, opacity: 0, repeat: -1, ease: 'power3.in'})
 
-//const sentences = [ "Hello :)", "My name is Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
-const sentences = [ "coucou" ];
+const sentences = [ "Hello :)", "I'm Mathieu, a fullstack developper !", "You can find me as Skrollu on Github !", "This website presents every projects I worked on, during my free time...", "<- Here, you can contact me.", "Or scroll down and follow me for the visit :)" ]
+//const sentences = [ "coucou" ];
 
 // event triggered when presentation is finished
 const presentationCompleted = (event) => {
