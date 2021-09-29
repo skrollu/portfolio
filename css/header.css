@@ -1,0 +1,113 @@
+/*
+HEADER
+*/
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  height: 85vh;
+  background-color: #020024;
+}
+
+header h1 {
+  color: white;
+  font-size: 5rem;
+  max-width: 80%;
+  user-select: none;
+}
+
+/*
+HEADER NAV BAR
+*/
+
+header .nav-bar {
+  position: absolute;
+  top: 0;  
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20%;
+}
+
+header .nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;  
+}
+
+header .nav-bar ul li {
+  position: relative;
+  list-style: none;
+  margin: 20px 0;
+  font-family: consolas;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+header .nav-bar ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: translate(100%);
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+header .nav-bar ul li:nth-child(1):hover::after {
+  transform: translateX(-100%);
+}
+
+header .nav-bar ul li:nth-child(2)::after {
+  top:0;
+}
+
+header .nav-bar ul li:nth-child(2):hover::after {
+  transform: translateX(-100%);
+}
+
+header .nav-bar ul li:nth-child(3):hover::after {
+  transform: translateX(-100%);
+}
+
+header .nav-bar ul li a,
+header .nav-bar ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+/**
+ARROWS 
+*/
+.arrows-container {
+  position: absolute;
+  
+  left: 50%;
+  bottom: 80px;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+
+  height: 50px;
+  width: 50px;
+  background-color: white;
+
+  clip-path: polygon(50% 90%, 100% 40%, 100% 50%, 50% 100%, 0 50%, 0 40%);
+  /* animation: 1s arrows-slide infinite; */
+}
+
+.arrow:nth-child(2) {
+  top: 25px;
+}
+
+/* @keyframes arrows-slide {
+  50% {
+    bottom: 40px;
+  }
+} */
+
