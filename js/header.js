@@ -1,3 +1,4 @@
+/**
 gsap.registerPlugin(TextPlugin)
 
 // PRESENTATION TIMELINE
@@ -85,3 +86,4 @@ sentences.forEach((sentence, index) => {
     }
     presentationTimeline.add(tl);
 })
+*/

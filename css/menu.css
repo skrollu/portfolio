@@ -95,3 +95,8 @@ nav ul li:nth-child(3) .link::before,
 nav ul li:nth-child(3) .link::after {
   content: 'Contacts';
 }
+/** Bidon */
+nav ul li:nth-child(4) .link::before,
+nav ul li:nth-child(4) .link::after {
+  content: 'Bidon';
+}

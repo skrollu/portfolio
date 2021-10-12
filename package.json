@@ -9,6 +9,8 @@
     "vite": "^2.3.7"
   },
   "dependencies": {
-    "gsap": "^3.6.1"
+    "@swup/fade-theme": "^1.0.5",
+    "gsap": "^3.6.1",
+    "swup": "^2.0.14"
   }
 }

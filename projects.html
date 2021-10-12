@@ -57,7 +57,7 @@
   </header>
   -->  
   
-  <main class="main-content">
+  <main id="swup">
     
     <a id="menu-btn" href="./menu.html">
       <i class="fas fa-bars"></i>
@@ -98,7 +98,7 @@
         <p class="description">
         </p>
       </div>
-      
+
     </section>
 
     <section id="second-section">  
@@ -184,36 +184,41 @@
         </div>
       </div>
     </section>
+    
+    <footer class="footer">
+      <div class="footer-column">
+        <h3>Contact me</h3>
+        <ul>
+          <li>Linked in</li>
+          <li>Indeed</li>
+          <li>Github</li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Mail</h3>
+        <ul>
+          <li><a href="mailto:matiber76@gmail.com">contact@me.fr</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Realized by</h3>
+        <ul>
+          <li>Mathieu @Skrollu</li>
+        </ul>
+      </div>
+    </footer>
   </main>
-  
-  <footer class="footer">
-    <div class="footer-column">
-      <h3>Contact me</h3>
-      <ul>
-        <li>Linked in</li>
-        <li>Indeed</li>
-        <li>Github</li>
-      </ul>
-    </div>
     
-    <div class="footer-column">
-      <h3>Mail</h3>
-      <ul>
-        <li><a href="mailto:matiber76@gmail.com">contact@me.fr</a></li>
-      </ul>
-    </div>
-    
-    <div class="footer-column">
-      <h3>Realized by</h3>
-      <ul>
-        <li>Mathieu @Skrollu</li>
-      </ul>
-    </div>
-  </footer>
-  
-  <script type="module" src="./js/header.js"></script>
-  <script src="js/sideBar.js"></script>
-  <script type="module" src="js/main.js"></script>
+  <!--
+    <script type="module" src="./js/header.js"></script>
+    <script src="js/sideBar.js"></script>
+    <script type="module" src="js/main.js"></script>
+  -->
+  <script src="/node_modules/swup/dist/swup.min.js"></script>
+  <script src="/node_modules/@swup/fade-theme/dist/SwupFadeTheme.js"></script>
+  <script src="/js/transition.js"></script>
   
 </body>
 </html>

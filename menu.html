@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./img/favico.jpg" />
+    <link rel="icon" type="image/svg+xml" href="./public/img/favico.jpg" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
     
     <link rel="stylesheet" href="./css/menu.css">
-
+        
+    
     <title>Skrollu | Menu</title>
 </head>
 <body>
-        
-    <nav>
+    
+    <nav id="swup">
         <ul>
-            <li><a class="link" href="./projects.html">Portfolio</a></li>
-            <li><a class="link" href="./aboutme.html">About me</a></li>
-            <li><a class="link" href="./contactme.html">Contacts</a></li>
+            <li><a class="link" href="/projects.html">Portfolio</a></li>
+            <li><a class="link" href="/aboutme.html">About me</a></li>
+            <li><a class="link" href="/contactme.html">Contacts</a></li>
+            <li><a class="link" href="/bidon.html">Bidon</a></li>
         </ul>
     </nav>
     
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script src="/node_modules/@swup/fade-theme/dist/SwupFadeTheme.js"></script>
+
+    <script src="/js/transition.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/**
 const sideBar = document.querySelector('.side-bar');
 const openCloseBtn = document.querySelector('.openCloseContact')
 
@@ -14,3 +15,4 @@ const openCloseContact = (e) => {
         openCloseBtn.style.left = `10px`
     }
 }
+*/

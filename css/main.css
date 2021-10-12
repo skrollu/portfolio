@@ -34,8 +34,8 @@
 /** SECTION 1*/
 #first-section {
     position: relative;
-    padding: 50px 0;
-    background-color: rgba(148,187,233,1);
+    padding: 100px 0 50px 0;
+    background-color: rgb(129, 236, 143);
     /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
 }
 
@@ -129,6 +129,8 @@
 Section 2
 */
 #second-section {
+    position: relative;
+    padding: 50px 0;
     background: rgb(167, 52, 10);
 }
 
