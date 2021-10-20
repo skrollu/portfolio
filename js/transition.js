@@ -1,6 +1,7 @@
 const options = {
     plugins: [
-        new SwupFadeTheme()
+        new SwupFadeTheme(),
+        new SwupHeadPlugin()
     ],
     linkSelector:
         'a[href^="' +

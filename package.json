@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@swup/fade-theme": "^1.0.5",
+    "@swup/head-plugin": "^1.2.0",
     "gsap": "^3.6.1",
     "swup": "^2.0.14"
   }
