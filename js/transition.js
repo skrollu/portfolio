@@ -13,5 +13,3 @@ const options = {
 };
 
 const swup = new Swup(options);
-
-console.log("bonjour")

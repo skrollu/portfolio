@@ -15,6 +15,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
   <title>Skrollu | Projects</title>
 </head>
 <body>
@@ -30,36 +35,25 @@
     </div>
   </nav>
   
+  <div class="openCloseContact">
+    <button class="btn-openCloseContact" onclick="openCloseContact()"></button>
+  </div>
+-->  
+  
+<main id="swup">
+  
+  <a id="menu-btn" href="/menu.html">
+    <img class="hamburger-img" src="./public/img/hamburger.png" alt="Go to menu">
+  </a>
+  
   <header class="header">
-    <div class="openCloseContact">
-      <button class="btn-openCloseContact" onclick="openCloseContact()"></button>
-    </div>
-
-    <nav class="nav-bar">
-      <ul>
-        <li class="nav-link"><a href="contact.html">Contact</a></li>
-        <li class="nav-link"><a href="index.html">Projects</a></li>
-        <li class="nav-link"><a href="about.html">About</a></li>
-      </ul>
-    </nav>
     
     <h1 class="presentation-text">
       <span class="text"></span><span class="cursor">|</span>
     </h1>
-    
- 
-  </header>
-  -->  
-  
-  <main id="swup">
-    
-    <a id="menu-btn" href="/menu.html">
-      <img class="hamburger-img" src="./public/img/hamburger.png" alt="Go to menu">
-<!--       <div id="btn-hamburger">
-        <div id="hamburger"></div>
-      </div> -->
-    </a>
 
+  </header>
+  
     <!--     
       <div class="helper">
         <span class="text-helper"></span><span class="cursor">|</span>
@@ -208,17 +202,12 @@
     </footer>
   </main>
     
+  <script type="module" src="./js/header.js"></script>
   <!--
-    <script type="module" src="./js/header.js"></script>
     <script src="js/sideBar.js"></script>
     <script type="module" src="js/main.js"></script>
   -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-  <script src="https://kit.fontawesome.com/4fb1f11315.js" crossorigin="anonymous"></script>
+
 
   <script src="/js/libraries/swup.min.js"></script>
   <script src="/js/libraries/SwupFadeTheme.min.js"></script>

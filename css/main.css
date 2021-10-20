@@ -29,46 +29,6 @@
     height: 50px;
 }
 
-
-/* #menu-btn {
-    position: fixed;
-    z-index: 1;
-    top: 30px;
-    left: 10px;
-    text-decoration: none;
-    height: 10;
-}
-
-#btn-hamburger {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(3, 0, 41);
-}
-
-#hamburger {
-    position: relative;
-    height: 7px;
-    width: 50px;
-    background-color: #fff;
-}
-
-#hamburger::before,
-#hamburger::after {
-    content: '';
-    position: absolute;
-    height: 7px;
-    width: 50px;
-    background-color: #fff;
-}
-
-#hamburger::after {
-    top: -20px;
-}
-
-#hamburger::before {
-    bottom: -20px;
-} */
-
 /** SECTION 1*/
 #first-section {
     position: relative;
