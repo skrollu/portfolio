@@ -1,5 +1,3 @@
-console.log(1)
-
 /**
 gsap.registerPlugin(TextPlugin)
 
