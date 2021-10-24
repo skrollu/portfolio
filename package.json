@@ -1,12 +1,11 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "webpack": "webpack --watch"
   },
   "devDependencies": {
-    "vite": "^2.3.7"
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
     "@swup/fade-theme": "^1.0.5",

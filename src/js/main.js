@@ -1,10 +1,5 @@
-/*
-Paste in transition file directly see module with bundler  if we want to import js file inside them
-
-export function projectDescriptions() {
+export function mountProjectDescriptions() {
    
-    console.log("test");
-
     const cards = document.querySelectorAll('.card');
     const description = document.querySelector('.description');
     const cardTitle = document.querySelector('.card-title')
@@ -40,6 +35,21 @@ export function projectDescriptions() {
             activeCard(elem);
         });
     })
+}
+
+/*
+function unmountProjectDescriptions() {
+    console.log("test unmount 1")
+    console.log(cards)
+    if(cards) {
+        console.log("test unmount 2")
+        cards.forEach((card, index) => {
+            console.log(card)
+            card.removeEventListener('mouseover', () => {
+                console.log("unmount card description " + index);
+            })
+        })
+    }
 }
 */
 

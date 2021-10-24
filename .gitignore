@@ -4,3 +4,4 @@ gsap-member
 dist
 dist-ssr
 *.local
+.vscode
