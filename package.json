@@ -1,5 +1,6 @@
 {
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "My portfolio project, presents me and my abilities/skills. It's a project where firstly I try new things like usage of Swup.js transition library and config like webpack and babel. And secondly I also expose every projects I worked on during my studies and free time",
   "scripts": {
     "build": "webpack --watch"
   },
