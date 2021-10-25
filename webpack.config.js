@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'production',
     entry: './src/js/transition.js',
     output: {
         path: path.resolve(__dirname, 'dist/js'),
@@ -19,6 +20,5 @@ module.exports = {
                 }
             }
         ]
-    },
-    mode: 'production',
+    }
 };
