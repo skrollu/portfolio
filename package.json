@@ -1,14 +1,19 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "webpack --watch"
   },
   "devDependencies": {
-    "vite": "^2.3.7"
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "gsap": "^3.6.1"
+    "@swup/fade-theme": "^1.0.5",
+    "@swup/head-plugin": "^1.2.0",
+    "gsap": "^3.6.1",
+    "swup": "^2.0.14"
   }
 }

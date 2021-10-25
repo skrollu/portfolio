@@ -1,5 +1,6 @@
 node_modules
+gsap-member
 .DS_Store
-dist
 dist-ssr
 *.local
+.vscode

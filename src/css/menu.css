@@ -1,0 +1,92 @@
+* {
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(2, 0, 15);
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-direction: column;
+  margin-left: 20%;
+  list-style: none;
+}
+
+nav .link {
+  position: relative;
+  font-size: 8rem;
+  font-weight: 900;
+  font-family: 'Roboto';
+  color: transparent;
+  -webkit-text-stroke: 2px #fff; /* contour du text*/
+  transition: color 0.3s;
+}
+
+nav .link:hover {
+  color: #fff;
+}
+
+nav .link,
+nav .link:visited {
+  text-decoration: none;
+}
+
+
+nav ul li .link::before,
+nav ul li .link::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  -webkit-text-stroke: 0px; /* contour du text*/
+}
+
+nav ul li .link:hover::before {
+  top: -7px;
+  left: 7px;
+  color: red;
+}
+
+nav ul li .link:hover::after {
+  top: -14px;
+  left: 14px;
+  color: rgb(35, 167, 255);
+  -webkit-text-stroke: 1px #000; /* contour du text*/
+}
+
+/** Portfolio */
+nav ul li:nth-child(1) .link::before,
+nav ul li:nth-child(1) .link::after {
+  content: 'Portfolio';
+}
+/** About */
+nav ul li:nth-child(2) .link::before,
+nav ul li:nth-child(2) .link::after {
+  content: 'About\00a0me';
+}
+/** Link */
+nav ul li:nth-child(3) .link::before,
+nav ul li:nth-child(3) .link::after {
+  content: 'Contacts';
+}
+/** Bidon */
+nav ul li:nth-child(4) .link::before,
+nav ul li:nth-child(4) .link::after {
+  content: 'Bidon';
+}
