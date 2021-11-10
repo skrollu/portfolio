@@ -32,7 +32,7 @@ const init = () => {
     mountProjectDescriptions()
   }
 
-  if (document.querySelector('#aboutme-swup-init')) {
+  if (document.querySelector('.aboutme-swup-init')) {
     console.log('mount about me page')
     mountAboutMe()
   }
