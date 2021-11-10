@@ -1,4 +1,3 @@
-
 /*
 SIDE BAR
 */
@@ -25,7 +24,7 @@ SIDE BAR
 
 .side-bar img {
   height: 20px;
-  color: cyan
+  color: cyan;
 }
 
 .side-bar ul {
@@ -34,8 +33,8 @@ SIDE BAR
 }
 
 .side-bar li {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .side-bar a {
@@ -64,13 +63,13 @@ Open Close Contact btn
   cursor: pointer;
 
   background-color: transparent;
-  border-top: 2px solid white; 
-  border-bottom: 2px solid white;  
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
-.btn-openCloseContact::after{
-  content: "";
-  position: absolute;  
+.btn-openCloseContact::after {
+  content: '';
+  position: absolute;
   top: 10;
   left: 0;
   transform: translateY(-50%);

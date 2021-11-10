@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./public/img/favico.jpg" />
 
-    <link rel="stylesheet" href="./src/css/sideBar.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/header.css" />
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-    <link rel="stylesheet" href="./src/css/menu.css">
-        
+    <!-- Libraries mandatory css files-->
+    <link rel="stylesheet" href="./src/css/locomotive-scroll.css" />
+
+    <link rel="stylesheet" href="./src/css/basic-style.css" />
+    <link rel="stylesheet" href="./src/css/projects-header.css" />
+    <link rel="stylesheet" href="./src/css/projects-main.css" />
+    <link rel="stylesheet" href="./src/css/projects-footer.css" />
+    <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/aboutme.css" />
+
     <title>Skrollu | About me</title>
-</head>
-<body>
-    <main id="swup">
-        <h1>About me</h1>
-        <a href="/portfolio/menu.html">Menu</a>
+  </head>
+  <body>
+    <main id="swup" class="aboutme-swup-init" data-scroll-container>
+      <a id="menu-btn" href="/menu.html">menu</a>
+
+      <section class="sectiontest" data-scroll-section>
+        <h1>coucou</h1>
+      </section>
+      <section class="sectiontest" data-scroll-section>
+        <h1>coucou</h1>
+      </section>
     </main>
-    
-    <script  src="./dist/js/bundle.js"></script>
-</body>
+
+    <script src="./dist/js/bundle.js"></script>
+  </body>
 </html>

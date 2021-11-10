@@ -1,5 +1,5 @@
 * {
-  margin: 0;  
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -46,7 +46,6 @@ nav .link,
 nav .link:visited {
   text-decoration: none;
 }
-
 
 nav ul li .link::before,
 nav ul li .link::after {
