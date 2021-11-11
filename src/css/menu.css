@@ -8,6 +8,23 @@ html {
   font-size: 62.5%;
 }
 
+/** MENU - BTN */
+#menu-btn {
+  position: fixed;
+  z-index: 1000;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 3px 6px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/** MENU NAV LINKS */
 nav {
   position: absolute;
   z-index: 1;
@@ -83,9 +100,4 @@ nav ul li:nth-child(2) .link::after {
 nav ul li:nth-child(3) .link::before,
 nav ul li:nth-child(3) .link::after {
   content: 'Contacts';
-}
-/** Bidon */
-nav ul li:nth-child(4) .link::before,
-nav ul li:nth-child(4) .link::after {
-  content: 'Bidon';
 }

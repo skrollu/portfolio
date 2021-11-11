@@ -1,34 +1,3 @@
-/*
-.helper {
-    position: fixed;
-    z-index: 1000;
-
-    top: 20%;
-    right: -10%;
-    height: 250px;
-    width: 550px;
-    background: orange;
-    border-radius: 30px;
-    
-    font-size: 2.8rem;
-    color: white;
-    padding: 20px;
-    padding-right: calc(10% + 20px);
-}
-*/
-
-/** MENU BTN */
-#menu-btn {
-  position: fixed;
-  z-index: 1;
-  top: 10px;
-  left: 10px;
-}
-
-#menu-btn .hamburger-img {
-  height: 50px;
-}
-
 /** SECTION 1*/
 #first-section {
   position: relative;

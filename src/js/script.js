@@ -1,6 +1,6 @@
 import { mountHeaderPresentation } from './projects-header'
 import { mountProjectDescriptions } from './projects-main'
-import { mountAboutMe } from './aboutme'
+import { mountAboutMe, unmountAboutMe } from './aboutme'
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
 import SwupFadeTheme from '@swup/fade-theme'
@@ -38,8 +38,15 @@ const init = () => {
   }
 }
 
+const unload = () => {
+  if (document.querySelector('.aboutme-swup-init')) {
+    console.log('unmount about me page')
+    unmountAboutMe()
+  }
+}
+
 // run once
 init()
 // this event runs for every page view after initial load
 swup.on('contentReplaced', init)
-//swup.on('willReplaceContent', unload);
+swup.on('willReplaceContent', unload)
