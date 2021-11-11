@@ -1,8 +1,9 @@
 :root {
   --page-width: 1000vw;
-  --margin-left: 20vw;
+  --margin-left: 10vw;
   --viewport-height-box: 20vh;
   --header-color-aboutme: rgb(163, 73, 73);
+  --panel-border-width: 15px;
 }
 
 /** MENU - BTN */
@@ -45,36 +46,45 @@
 }
 
 /** EVENT CONTAINER */
-
 .event-container {
   position: relative;
   height: var(--viewport-height-box);
-  width: 400px;
-  border: 2px solid white;
+  width: 500px;
+  border: var(--panel-border-width) solid #fff;
+  border-radius: 10px;
+  padding: 10px 5px;
+
+  background-color: rgba(233, 160, 160, 0.808);
 }
 
 .event-container h2 {
+  text-align: center;
   font-size: 3rem;
+  color: rgb(240, 240, 240);
 }
 .event-container p {
+  text-align: justify;
   font-size: 2rem;
+  margin-top: 5px;
+  padding: 0 10px;
+  color: #fff;
 }
 
 .event-container.top::after,
 .event-container.bot::before {
   content: '';
   position: absolute;
-  width: 5px;
+  width: var(--panel-border-width);
   height: calc(var(--viewport-height-box) / 2);
-  background-color: #fff;
+  background-color: rgb(245, 245, 245);
   left: 50%;
   transform: translate(-50%);
 }
 
 .event-container.top::after {
-  bottom: calc(-2px - 50%);
+  bottom: calc(-50% - var(--panel-border-width) * 2);
 }
 
 .event-container.bot::before {
-  top: calc(-2px - 50%);
+  top: calc(-50% - var(--panel-border-width) * 2);
 }
