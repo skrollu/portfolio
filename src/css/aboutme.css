@@ -3,8 +3,10 @@
   --margin-left: 10vw;
   --viewport-height-box: 20vh;
   --header-color-aboutme: rgb(163, 73, 73);
-  --panel-border-width: 15px;
+  --panel-border-width: 5px;
 }
+
+/*font-family: 'Expletus Sans', cursive;*/
 
 /** MENU - BTN */
 .menu-btn-aboutme {
@@ -28,6 +30,15 @@
   width: var(--page-width);
   background-color: #fff;
   border-radius: 10px;
+}
+
+.timeline-container header {
+  position: absolute;
+  top: 8rem;
+  left: 10rem;
+  font-size: 4rem;
+  font-family: 'Major Mono Display', monospace;
+  color: white;
 }
 
 .timeline-container .timeline-box {
@@ -61,6 +72,7 @@
   text-align: center;
   font-size: 3rem;
   color: rgb(240, 240, 240);
+  font-family: 'Lexend Deca', sans-serif;
 }
 .event-container p {
   text-align: justify;
@@ -68,6 +80,7 @@
   margin-top: 5px;
   padding: 0 10px;
   color: #fff;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .event-container.top::after,
