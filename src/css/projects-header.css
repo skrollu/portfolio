@@ -1,57 +1,57 @@
 :root {
-  --header-color-projects: #020024;
+	--header-color-projects: #020024;
 }
 
 /*
 HEADER
 */
 #header-presentation {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 250px;
-  height: 85vh;
-  background-color: var(--header-color-projects);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 250px;
+	height: 85vh;
+	background-color: var(--header-color-projects);
 }
 
 #header-presentation h1 {
-  color: white;
-  font-size: 5rem;
-  max-width: 80%;
-  user-select: none;
+	color: white;
+	font-size: 5rem;
+	max-width: 80%;
+	user-select: none;
 }
 
 /** MENU - BTN */
 .menu-btn-blue {
-  color: var(--header-color-projects);
+	color: var(--header-color-projects);
 }
 
 /**
 ARROWS 
 */
 .arrows-container {
-  position: absolute;
+	position: absolute;
 
-  left: 50%;
-  bottom: 80px;
+	left: 50%;
+	bottom: 80px;
 }
 
 .arrow {
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 0;
+	transform: translate(-50%, -50%);
 
-  height: 50px;
-  width: 50px;
-  background-color: white;
+	height: 50px;
+	width: 50px;
+	background-color: white;
 
-  clip-path: polygon(50% 90%, 100% 40%, 100% 50%, 50% 100%, 0 50%, 0 40%);
-  /* animation: 1s arrows-slide infinite; */
+	clip-path: polygon(50% 90%, 100% 40%, 100% 50%, 50% 100%, 0 50%, 0 40%);
+	/* animation: 1s arrows-slide infinite; */
 }
 
 .arrow:nth-child(2) {
-  top: 25px;
+	top: 25px;
 }
 
 /* @keyframes arrows-slide {

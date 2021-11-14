@@ -10,45 +10,45 @@ import SwupFadeTheme from '@swup/fade-theme'
  * Swup init
  */
 const options = {
-  plugins: [new SwupFadeTheme(), new SwupHeadPlugin()],
-  linkSelector:
-    'a[href^="' +
-    window.location.origin +
-    '"]:not([data-no-swup]),' +
-    'a[href^="/"]:not([data-no-swup]),' +
-    'a[href^="#"]:not([data-no-swup])',
-  /*+ 'a[href^="./"]:not([data-no-swup])', */
+	plugins: [new SwupFadeTheme(), new SwupHeadPlugin()],
+	linkSelector:
+		'a[href^="' +
+		window.location.origin +
+		'"]:not([data-no-swup]),' +
+		'a[href^="/"]:not([data-no-swup]),' +
+		'a[href^="#"]:not([data-no-swup])',
+	/*+ 'a[href^="./"]:not([data-no-swup])', */
 }
 
 const swup = new Swup(options)
 
 const init = () => {
-  if (document.querySelector('.menu-circular-infinite-text')) {
-    console.log('mount infinite circular text menu')
-    mountMenu()
-  }
+	if (document.querySelector('.menu-circular-infinite-text')) {
+		console.log('mount infinite circular text menu')
+		mountMenu()
+	}
 
-  if (document.querySelector('#header-presentation')) {
-    console.log('mount header presentation')
-    mountHeaderPresentation()
-  }
+	if (document.querySelector('#header-presentation')) {
+		console.log('mount header presentation')
+		mountHeaderPresentation()
+	}
 
-  if (document.querySelector('#project-descriptions')) {
-    console.log('mount project description')
-    mountProjectDescriptions()
-  }
+	if (document.querySelector('#project-descriptions')) {
+		console.log('mount project description')
+		mountProjectDescriptions()
+	}
 
-  if (document.querySelector('.aboutme-swup-init')) {
-    console.log('mount about me page')
-    mountAboutMe()
-  }
+	if (document.querySelector('.aboutme-swup-init')) {
+		console.log('mount about me page')
+		mountAboutMe()
+	}
 }
 
 const unload = () => {
-  if (document.querySelector('.aboutme-swup-init')) {
-    console.log('unmount about me page')
-    unmountAboutMe()
-  }
+	if (document.querySelector('.aboutme-swup-init')) {
+		console.log('unmount about me page')
+		unmountAboutMe()
+	}
 }
 
 // run once
