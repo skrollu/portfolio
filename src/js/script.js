@@ -1,6 +1,7 @@
 import { mountHeaderPresentation } from './projects-header'
 import { mountProjectDescriptions } from './projects-main'
 import { mountAboutMe, unmountAboutMe } from './aboutme'
+import { mountMenu } from './menu'
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
 import SwupFadeTheme from '@swup/fade-theme'
@@ -22,6 +23,11 @@ const options = {
 const swup = new Swup(options)
 
 const init = () => {
+  if (document.querySelector('.menu-circular-infinite-text')) {
+    console.log('mount infinite circular text menu')
+    mountMenu()
+  }
+
   if (document.querySelector('#header-presentation')) {
     console.log('mount header presentation')
     mountHeaderPresentation()
