@@ -1,0 +1,92 @@
+/** MAIN */
+.menu2-container {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgb(2, 0, 15);
+}
+
+/** INFINITE CIRCULAR TEXT */
+.menu2-circular-infinite-text {
+	position: absolute;
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+	animation: infiniteRotate2 30s infinite linear;
+}
+
+.menu2-circular-infinite-text .img-letter {
+	height: 2.5rem;
+	/* filter: drop-shadow(0rem 0rem 2rem rgb(255, 255, 255)); */
+}
+
+.menu2-circular-infinite-text .letter2 {
+	position: absolute;
+	user-select: none;
+	pointer-events: none;
+	transform-origin: 0 200px;
+	top: -200px;
+}
+@keyframes infiniteRotate2 {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/** NAV-LINKS */
+#menu2-nav-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu2-nav ul {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+#menu2-nav ul li {
+	margin: 0 3rem;
+}
+
+#menu2-nav ul li .link {
+	position: relative;
+	font-size: 4rem;
+	font-weight: 300;
+	font-family: 'Varela Round', sans-serif;
+	text-transform: uppercase;
+
+	/*color: transparent;
+	-webkit-text-stroke: 2px rgb(225, 0, 255); /* contour du text*/
+	transition: color 0.3s;
+
+	color: rgb(251, 140, 255);
+	text-shadow: -2px -2px 50px rgb(143, 0, 161), 2px -2px 50px rgb(143, 0, 161),
+		-2px 2px 50px rgb(143, 0, 161), 2px 2px 50px rgb(143, 0, 161);
+}
+
+#menu2-nav ul li .link,
+#menu2-nav ul li .link:visited {
+	text-decoration: none;
+}
+
+#menu2-nav-container h3 {
+	font-family: 'Varela Round', sans-serif;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+
+	color: rgb(251, 140, 255);
+	text-shadow: -2px -2px 50px rgb(143, 0, 161), 2px -2px 50px rgb(143, 0, 161),
+		-2px 2px 50px rgb(143, 0, 161), 2px 2px 50px rgb(143, 0, 161);
+}

@@ -2,6 +2,7 @@ import { mountHeaderPresentation } from './projects-header'
 import { mountProjectDescriptions } from './projects-main'
 import { mountAboutMe, unmountAboutMe } from './aboutme'
 import { mountMenu } from './menu'
+import { mountMenu2 } from './menu2'
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
 import SwupFadeTheme from '@swup/fade-theme'
@@ -26,6 +27,11 @@ const init = () => {
 	if (document.querySelector('.menu-circular-infinite-text')) {
 		console.log('mount infinite circular text menu')
 		mountMenu()
+	}
+
+	if (document.querySelector('.menu2-circular-infinite-text')) {
+		console.log('mount infinite circular text menu2')
+		mountMenu2()
 	}
 
 	if (document.querySelector('#header-presentation')) {

@@ -1,13 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62.5%;
-}
-
 /** MENU - BTN */
 #menu-btn {
 	position: fixed;
@@ -28,6 +18,7 @@ html {
 	position: relative;
 	height: 100vh;
 	width: 100%;
+	overflow: hidden;
 	background-color: rgb(2, 0, 15);
 }
 
@@ -37,6 +28,7 @@ html {
 	z-index: 0;
 	top: 20%;
 	left: 25%;
+	opacity: 0.5;
 	animation: infiniteRotate 30s infinite linear;
 }
 
@@ -46,18 +38,17 @@ html {
 
 .menu-circular-infinite-text .plain-letter {
 	display: inline-block;
-	color: #ca0022;
 
-	font-family: 'Roboto';
+	font-family: 'Varela Round', sans-serif;
+	text-transform: uppercase;
+
 	color: transparent;
-	text-transform: uppercase;
 	-webkit-text-stroke: 2px rgb(255, 0, 255); /* contour du text*/
-	text-transform: uppercase;
-	font-size: 2.5rem;
-	font-weight: 900;
+
+	font-size: 3.5rem;
 }
 .menu-circular-infinite-text .img-letter {
-	height: 2rem;
+	height: 2.5rem;
 	/* filter: drop-shadow(0rem 0rem 2rem rgb(255, 255, 255)); */
 }
 
@@ -65,8 +56,8 @@ html {
 	position: absolute;
 	user-select: none;
 	pointer-events: none;
-	transform-origin: 0 200px;
-	top: -200px;
+	transform-origin: 0 250px;
+	top: -250px;
 }
 
 @keyframes infiniteRotate {
@@ -78,6 +69,15 @@ html {
 	}
 }
 
+/** SMOKE */
+.smoke {
+	position: absolute;
+	height: 100%;
+	bottom: 10%;
+	opacity: 0.15;
+	filter: blur(1px) drop-shadow(16px 16px 20px rgb(143, 0, 112));
+}
+
 /** MENU NAV LINKS */
 #menu-nav {
 	position: absolute;
@@ -85,35 +85,39 @@ html {
 	width: 100%;
 }
 
-nav ul {
+#menu-nav ul {
 	height: 100%;
 	display: flex;
 	justify-content: space-evenly;
-	align-items: left;
+	align-items: center;
 	flex-direction: column;
-	margin-left: 20%;
 	list-style: none;
-	background-color: rgb(2, 0, 15);
 }
 
-nav .link {
+#menu-nav .link {
 	position: relative;
 	font-size: 8rem;
-	font-weight: 900;
-	font-family: 'Roboto';
-	color: transparent;
+	font-weight: 300;
+	font-family: 'Varela Round', sans-serif;
 	text-transform: uppercase;
-	-webkit-text-stroke: 2px #fff; /* contour du text*/
+
+	/*color: transparent;
+	-webkit-text-stroke: 2px rgb(225, 0, 255); /* contour du text*/
 	transition: color 0.3s;
+
+	color: rgb(251, 140, 255);
+	text-shadow: -2px -2px 25px rgb(143, 0, 161), 2px -2px 25px rgb(143, 0, 161),
+		-2px 2px 25px rgb(143, 0, 161), 2px 2px 25px rgb(143, 0, 161);
 }
 
+#menu-nav .link,
+#menu-nav .link:visited {
+	text-decoration: none;
+}
+
+/**
 nav .link:hover {
 	color: #fff;
-}
-
-nav .link,
-nav .link:visited {
-	text-decoration: none;
 }
 
 nav ul li .link::before,
@@ -122,7 +126,7 @@ nav ul li .link::after {
 	top: 0;
 	left: 0;
 	transition: 0.3s ease-in-out;
-	-webkit-text-stroke: 0px; /* contour du text*/
+	-webkit-text-stroke: 0px; 
 }
 
 nav ul li .link:hover::before {
@@ -135,21 +139,21 @@ nav ul li .link:hover::after {
 	top: -14px;
 	left: 14px;
 	color: rgb(35, 167, 255);
-	-webkit-text-stroke: 1px #000; /* contour du text*/
+	-webkit-text-stroke: 1px #000; 
 }
 
-/** Portfolio */
 nav ul li:nth-child(1) .link::before,
 nav ul li:nth-child(1) .link::after {
 	content: 'Portfolio';
 }
-/** About */
+
 nav ul li:nth-child(2) .link::before,
 nav ul li:nth-child(2) .link::after {
 	content: 'About\00a0me';
 }
-/** Link */
+
 nav ul li:nth-child(3) .link::before,
 nav ul li:nth-child(3) .link::after {
 	content: 'Contacts';
 }
+*/
