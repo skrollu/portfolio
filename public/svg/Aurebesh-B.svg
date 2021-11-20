@@ -12,6 +12,6 @@
   <g id="layer1" transform="translate(-399.5235,4451.5659)">
     <path style="
     fill:#9efcff;
-    filter:blur(10px);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect2880" d="m 441.4875,-4451.5659 -41.964,49.9998 h 42.858 l 15.999,-19.0476 h 125.148 l 15.996,19.0476 h 42.858 l -41.964,-49.9998 h -0.894 -41.964 -73.215 -41.964 z m 29.466,59.5239 v 30.9522 h 99.999 v -30.9522 z m -71.43,40.476 41.964,49.9998 h 0.894 41.964 73.215 41.964 0.894 l 41.964,-49.9998 h -42.858 l -15.996,19.0476 h -125.148 l -15.999,-19.0476 z"/>
+    filter:blur(5px);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect2880" d="m 441.4875,-4451.5659 -41.964,49.9998 h 42.858 l 15.999,-19.0476 h 125.148 l 15.996,19.0476 h 42.858 l -41.964,-49.9998 h -0.894 -41.964 -73.215 -41.964 z m 29.466,59.5239 v 30.9522 h 99.999 v -30.9522 z m -71.43,40.476 41.964,49.9998 h 0.894 41.964 73.215 41.964 0.894 l 41.964,-49.9998 h -42.858 l -15.996,19.0476 h -125.148 l -15.999,-19.0476 z"/>
   </g>
 </svg>

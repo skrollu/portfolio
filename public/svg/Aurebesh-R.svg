@@ -12,6 +12,6 @@
   <g id="layer1" transform="translate(-435.99293,-323.07677)">
     <path style="
     fill:#9efcff;
-    filter:blur(10px);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect3657" d="m 461.77493,323.07677 -25.782,30.4686 h 117.774 l -99.024,119.5308 h 42.186 l 124.221,-149.9994 h -35.157 -7.032 z"/>
+    filter:blur(5px);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect3657" d="m 461.77493,323.07677 -25.782,30.4686 h 117.774 l -99.024,119.5308 h 42.186 l 124.221,-149.9994 h -35.157 -7.032 z"/>
   </g>
 </svg>

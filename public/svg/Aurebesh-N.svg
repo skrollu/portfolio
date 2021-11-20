@@ -12,6 +12,6 @@
   <g id="layer1" transform="translate(-421.641,225.13768)">
     <path style="
     fill:#9efcff;
-    filter:blur(10px);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect3645" d="m 447.423,-225.13768 c 0,0 -25.782,25.7814 -25.782,77.3439 0,44.5311 30.468,72.656098 30.468,72.656098 h 37.5 l 65.625,-116.674798 65.625,116.674798 h 37.5 L 573.984,-225.13768 h -37.5 l -69.138,122.9736 c -6.975,-11.934 -12.891,-27.3732 -12.891,-45.6297 0,-51.5625 30.468,-77.3439 30.468,-77.3439 z"/>
+    filter:blur(5px);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect3645" d="m 447.423,-225.13768 c 0,0 -25.782,25.7814 -25.782,77.3439 0,44.5311 30.468,72.656098 30.468,72.656098 h 37.5 l 65.625,-116.674798 65.625,116.674798 h 37.5 L 573.984,-225.13768 h -37.5 l -69.138,122.9736 c -6.975,-11.934 -12.891,-27.3732 -12.891,-45.6297 0,-51.5625 30.468,-77.3439 30.468,-77.3439 z"/>
   </g>
 </svg>

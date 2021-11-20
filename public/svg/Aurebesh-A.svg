@@ -12,7 +12,7 @@
   <g id="layer1" transform="translate(-320.15882,-254.50504)">
     <path id="path2521" style="
     fill:#9efcff;
-    filter:blur(20px);
+    filter:blur(5px);
     fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.5999999;stroke-opacity:1" d="m 320.15882,254.50504 v 123.8097 h 266.6646 l 238.092,-123.8097 h -138.0963 l -109.524,57.1431 h -195.24 v -57.1431 z m 0,176.1903 v 123.8097 h 61.8963 v -57.1431 h 195.24 l 109.524,57.1431 h 138.0963 l -238.092,-123.8097 z"/>
   </g>
 </svg>
