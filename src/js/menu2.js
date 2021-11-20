@@ -9,6 +9,13 @@ export function mountMenu2() {
 		el.style.transform =
 			'rotate(' + index * (circleSize / numberOfLetters) + 'deg)'
 	})
+
+	const lettersReversed = document.querySelectorAll('.letter2-reverse')
+
+	lettersReversed.forEach((el, index) => {
+		el.style.transform =
+			'rotate(' + index * (circleSize / numberOfLetters) + 'deg)'
+	})
 }
 
 export function animateSocials() {

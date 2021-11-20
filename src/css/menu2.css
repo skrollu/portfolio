@@ -1,10 +1,28 @@
 /** MAIN */
 .menu2-container {
 	position: relative;
+	z-index: 1;
 	height: 100vh;
 	width: 100%;
+	background-color: transparent;
 	overflow: hidden;
-	background-color: rgb(2, 0, 15);
+}
+
+.menu2-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	box-shadow: inset -1.5rem 0 3rem 1rem rgb(108, 0, 151);
+
+	background-image: url('../../public/img/Blade-Runner-2049-1.jpg');
+	background-size: cover;
+	background-position: center;
+	filter: blur(2px);
+	object-fit: cover;
 }
 
 /** INFINITE CIRCULAR TEXT */
@@ -18,18 +36,21 @@
 	animation: infiniteRotate2 30s infinite linear;
 }
 
-.menu2-circular-infinite-text .img-letter {
+.menu2-circular-infinite-text .img-letter/* ,
+.menu2-circular-infinite-text-reverse .img-letter-reverse  */ {
 	height: 2.5rem;
-	/* filter: drop-shadow(0rem 0rem 2rem rgb(255, 255, 255)); */
+	filter: drop-shadow(1rem 1rem 2rem rgb(255, 255, 255));
 }
 
-.menu2-circular-infinite-text .letter2 {
+.menu2-circular-infinite-text .letter2/* ,
+.menu2-circular-infinite-text-reverse .letter2-reverse  */ {
 	position: absolute;
 	user-select: none;
 	pointer-events: none;
 	transform-origin: 0 200px;
 	top: -200px;
 }
+
 @keyframes infiniteRotate2 {
 	0% {
 		transform: rotate(360deg);
@@ -38,6 +59,40 @@
 		transform: rotate(0deg);
 	}
 }
+
+/** REVERSE */
+/*
+.menu2-circular-infinite-text-reverse {
+	position: absolute;
+	z-index: 0;
+	top: calc(50% + 405px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+	animation: infiniteRotate2Reverse 30s infinite linear reverse;
+}
+
+.menu2-circular-infinite-text-reverse::before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -202px;
+	left: -250px;
+	height: 50rem;
+	width: 50rem;
+
+	filter: blur(50px);
+}
+
+@keyframes infiniteRotate2Reverse {
+	0% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(calc(540deg));
+	}
+}
+*/
 
 /** NAV-LINKS */
 #menu2-nav-container {
@@ -59,23 +114,51 @@
 }
 
 #menu2-nav ul li {
-	margin: 0 3rem;
+	margin: 0 4.5rem;
 }
 
 #menu2-nav ul li .link {
 	position: relative;
-	font-size: 4rem;
-	font-weight: 300;
-	font-family: 'Varela Round', sans-serif;
+	/* font-family: 'Arial Black', Gadget, sans-serif; */
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 7rem;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	font-weight: 400;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
 	text-transform: uppercase;
 
-	/*color: transparent;
-	-webkit-text-stroke: 2px rgb(225, 0, 255); /* contour du text*/
-	transition: color 0.3s;
+	color: #ffffff;
+	text-shadow: 0 0 7px #92fbff, 0 0 10px #92fbff, 0 0 21px #92fbff,
+		0 0 42px #00e4f5, 0 0 82px #00e4f5, 0 0 92px #00e4f5, 0 0 102px #00e4f5,
+		0 0 151px #00e4f5;
+}
 
-	color: rgb(251, 140, 255);
-	text-shadow: -2px -2px 50px rgb(143, 0, 161), 2px -2px 50px rgb(143, 0, 161),
-		-2px 2px 50px rgb(143, 0, 161), 2px 2px 50px rgb(143, 0, 161);
+#menu2-nav ul li .link:hover {
+	animation: flicker 1.5s infinite alternate;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+	0%,
+	18%,
+	22%,
+	25%,
+	53%,
+	57%,
+	100% {
+		text-shadow: 0 0 7px #92fbff, 0 0 10px #92fbff, 0 0 21px #92fbff,
+			0 0 42px #00e4f5, 0 0 82px #00e4f5, 0 0 92px #00e4f5, 0 0 102px #00e4f5,
+			0 0 151px #00e4f5;
+	}
+
+	20%,
+	24%,
+	55% {
+		text-shadow: none;
+	}
 }
 
 #menu2-nav ul li .link,
@@ -83,7 +166,7 @@
 	text-decoration: none;
 }
 
-#menu2-nav-container h3 {
+#menu2-nav-container .name {
 	font-family: 'Varela Round', sans-serif;
 	text-transform: uppercase;
 	font-size: 2.5rem;
@@ -114,8 +197,12 @@
 	height: 4rem;
 	width: 6rem;
 	margin: 0 4.5rem;
-	fill: rgb(202, 202, 202);
+	fill: #edc1fa;
+	transition: fill 0.3s;
 }
 #menu2-footer ul li a svg:hover {
 	fill: #fff;
+	filter: drop-shadow(0px 0px 1rem #f973fd);
+	/* box-shadow: 0 0 1rem #fff; */
+	/* text-shadow: 2rem 2rem 2rem#fff; */
 }
