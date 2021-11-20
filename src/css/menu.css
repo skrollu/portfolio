@@ -1,63 +1,52 @@
-/** MENU - BTN */
-#menu-btn {
-	position: fixed;
-	z-index: 1000;
-	top: 15px;
-	left: 50%;
-	transform: translate(-50%, 0);
-
-	font-size: 3rem;
-	text-decoration: none;
-	padding: 3px 6px;
-	background-color: #fff;
-	border-radius: 10px;
-}
-
 /** MAIN */
 .menu-container {
 	position: relative;
+	z-index: 1;
 	height: 100vh;
 	width: 100%;
+	background-color: transparent;
 	overflow: hidden;
-	background-color: rgb(2, 0, 15);
+}
+
+.menu-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	box-shadow: inset -1.5rem 0 3rem 1rem rgb(108, 0, 151);
+
+	background-image: url('../../public/img/Blade-Runner-2049-1.jpg');
+	background-size: cover;
+	background-position: center;
+	filter: blur(2px);
+	object-fit: cover;
 }
 
 /** INFINITE CIRCULAR TEXT */
 .menu-circular-infinite-text {
 	position: absolute;
 	z-index: 0;
-	top: 20%;
-	left: 25%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	opacity: 0.5;
-	animation: infiniteRotate 30s infinite linear;
+	/* animation: infiniteRotate 30s infinite linear; */
 }
 
-.menu-circular-infinite-text .plain-text {
-	box-shadow: 10rem 0rem 2rem rgb(255, 255, 255);
-}
-
-.menu-circular-infinite-text .plain-letter {
-	display: inline-block;
-
-	font-family: 'Varela Round', sans-serif;
-	text-transform: uppercase;
-
-	color: transparent;
-	-webkit-text-stroke: 2px rgb(255, 0, 255); /* contour du text*/
-
-	font-size: 3.5rem;
-}
 .menu-circular-infinite-text .img-letter {
 	height: 2.5rem;
-	/* filter: drop-shadow(0rem 0rem 2rem rgb(255, 255, 255)); */
+	filter: drop-shadow(0rem 0rem 2rem rgb(255, 255, 255));
 }
 
 .menu-circular-infinite-text .letter {
 	position: absolute;
 	user-select: none;
 	pointer-events: none;
-	transform-origin: 0 250px;
-	top: -250px;
+	transform-origin: 0 200px;
+	top: -200px;
 }
 
 @keyframes infiniteRotate {
@@ -69,91 +58,115 @@
 	}
 }
 
-/** SMOKE */
-.smoke {
-	position: absolute;
-	height: 100%;
-	bottom: 10%;
-	opacity: 0.15;
-	filter: blur(1px) drop-shadow(16px 16px 20px rgb(143, 0, 112));
-}
-
-/** MENU NAV LINKS */
-#menu-nav {
+/** NAV-LINKS */
+#menu-nav-container {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #menu-nav ul {
 	height: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 	list-style: none;
 }
 
-#menu-nav .link {
-	position: relative;
-	font-size: 8rem;
-	font-weight: 300;
-	font-family: 'Varela Round', sans-serif;
-	text-transform: uppercase;
-
-	/*color: transparent;
-	-webkit-text-stroke: 2px rgb(225, 0, 255); /* contour du text*/
-	transition: color 0.3s;
-
-	color: rgb(251, 140, 255);
-	text-shadow: -2px -2px 25px rgb(143, 0, 161), 2px -2px 25px rgb(143, 0, 161),
-		-2px 2px 25px rgb(143, 0, 161), 2px 2px 25px rgb(143, 0, 161);
+#menu-nav ul li {
+	margin: 0 4.5rem;
 }
 
-#menu-nav .link,
-#menu-nav .link:visited {
+#menu-nav ul li .link {
+	position: relative;
+	/* font-family: 'Arial Black', Gadget, sans-serif; */
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 7rem;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	font-weight: 400;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	text-shadow: 0 0 7px #92fbff, 0 0 10px #92fbff, 0 0 21px #92fbff,
+		0 0 42px #00e4f5, 0 0 82px #00e4f5, 0 0 92px #00e4f5, 0 0 102px #00e4f5,
+		0 0 151px #00e4f5;
+}
+
+#menu-nav ul li .link:hover {
+	animation: flicker 1.5s infinite alternate;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+	0%,
+	18%,
+	22%,
+	25%,
+	53%,
+	57%,
+	100% {
+		text-shadow: 0 0 7px #92fbff, 0 0 10px #92fbff, 0 0 21px #92fbff,
+			0 0 42px #00e4f5, 0 0 82px #00e4f5, 0 0 92px #00e4f5, 0 0 102px #00e4f5,
+			0 0 151px #00e4f5;
+	}
+
+	20%,
+	24%,
+	55% {
+		text-shadow: none;
+	}
+}
+
+#menu-nav ul li .link,
+#menu-nav ul li .link:visited {
 	text-decoration: none;
 }
 
-/**
-nav .link:hover {
-	color: #fff;
+#menu-nav-container .name {
+	font-family: 'Varela Round', sans-serif;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+
+	color: rgb(251, 140, 255);
+	text-shadow: -2px -2px 50px rgb(143, 0, 161), 2px -2px 50px rgb(143, 0, 161),
+		-2px 2px 50px rgb(143, 0, 161), 2px 2px 50px rgb(143, 0, 161);
 }
 
-nav ul li .link::before,
-nav ul li .link::after {
+/** FOOTER */
+#menu-footer {
 	position: absolute;
-	top: 0;
-	left: 0;
-	transition: 0.3s ease-in-out;
-	-webkit-text-stroke: 0px; 
+	right: 0;
+	bottom: 0;
+	padding-right: 2rem;
+	padding-bottom: 2.5rem;
+
+	width: 100%;
 }
 
-nav ul li .link:hover::before {
-	top: -7px;
-	left: 7px;
-	color: red;
+#menu-footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
 }
 
-nav ul li .link:hover::after {
-	top: -14px;
-	left: 14px;
-	color: rgb(35, 167, 255);
-	-webkit-text-stroke: 1px #000; 
+#menu-footer ul li a svg {
+	height: 4rem;
+	width: 6rem;
+	margin: 0 4.5rem;
+	fill: #edc1fa;
+	transition: fill 0.3s;
 }
-
-nav ul li:nth-child(1) .link::before,
-nav ul li:nth-child(1) .link::after {
-	content: 'Portfolio';
+#menu-footer ul li a svg:hover {
+	fill: #fff;
+	filter: drop-shadow(0px 0px 1rem #f973fd);
+	/* box-shadow: 0 0 1rem #fff; */
+	/* text-shadow: 2rem 2rem 2rem#fff; */
 }
-
-nav ul li:nth-child(2) .link::before,
-nav ul li:nth-child(2) .link::after {
-	content: 'About\00a0me';
-}
-
-nav ul li:nth-child(3) .link::before,
-nav ul li:nth-child(3) .link::after {
-	content: 'Contacts';
-}
-*/
