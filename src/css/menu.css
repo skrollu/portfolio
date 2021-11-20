@@ -1,3 +1,18 @@
+/** MENU - BTN */
+#menu-btn {
+	position: fixed;
+	z-index: 1000;
+	top: 15px;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	font-size: 3rem;
+	text-decoration: none;
+	padding: 3px 6px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
 /** MAIN */
 .menu-container {
 	position: relative;
@@ -33,7 +48,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	opacity: 0.5;
-	/* animation: infiniteRotate 30s infinite linear; */
+	animation: infiniteRotate 30s infinite linear;
 }
 
 .menu-circular-infinite-text .img-letter {
