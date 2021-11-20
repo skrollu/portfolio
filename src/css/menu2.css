@@ -41,7 +41,9 @@
 
 /** NAV-LINKS */
 #menu2-nav-container {
+	position: absolute;
 	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -89,4 +91,31 @@
 	color: rgb(251, 140, 255);
 	text-shadow: -2px -2px 50px rgb(143, 0, 161), 2px -2px 50px rgb(143, 0, 161),
 		-2px 2px 50px rgb(143, 0, 161), 2px 2px 50px rgb(143, 0, 161);
+}
+
+/** FOOTER */
+#menu2-footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding-right: 2rem;
+	padding-bottom: 2.5rem;
+
+	width: 100%;
+}
+
+#menu2-footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#menu2-footer ul li a svg {
+	height: 4rem;
+	width: 6rem;
+	margin: 0 4.5rem;
+	fill: rgb(202, 202, 202);
+}
+#menu2-footer ul li a svg:hover {
+	fill: #fff;
 }
