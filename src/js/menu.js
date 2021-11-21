@@ -1,16 +1,27 @@
 import gsap from 'gsap'
 
+let mounted = false
+const circleSize = 360 //360 deg in a circle
+
 export function mountMenu() {
-	const letters = document.querySelectorAll('.letter')
+	rotateCircularLetters()
+	//avoid to animate every time we return to menu page
+	if (!mounted) {
+		animateSocials()
+	}
+	mounted = true
+}
+
+function rotateCircularLetters() {
+	const letters = document.querySelectorAll(
+		'.menu-circular-infinite-text .img-letter-circular'
+	)
 	const numberOfLetters = letters.length
-	const circleSize = 360 //360 deg in a circle
 
 	letters.forEach((el, index) => {
 		el.style.transform =
 			'rotate(' + index * (circleSize / numberOfLetters) + 'deg)'
 	})
-
-	animateSocials()
 }
 
 function animateSocials() {

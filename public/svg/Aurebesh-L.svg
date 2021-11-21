@@ -10,6 +10,8 @@
   </metadata>
   <defs id="defs2763"/>
   <g id="layer1" transform="translate(-310.21243,580.13755)">
-    <path style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect3615" d="m 421.59343,-580.13755 v 119.19629 l -94.419,-61.97939 -16.962,25.893 101.859,66.88949 h 9.522 30.954 v -19.0473 -130.95209 z"/>
+    <path style="
+    fill:#9efcff;
+    filter:blur(5px);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.5999999;stroke-opacity:1" id="rect3615" d="m 421.59343,-580.13755 v 119.19629 l -94.419,-61.97939 -16.962,25.893 101.859,66.88949 h 9.522 30.954 v -19.0473 -130.95209 z"/>
   </g>
 </svg>
