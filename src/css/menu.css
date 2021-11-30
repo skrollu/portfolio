@@ -39,13 +39,6 @@
 }
 
 /** LANGUAGE SELECTOR */
-input[type='button'] {
-	cursor: pointer;
-}
-button {
-	cursor: pointer;
-}
-
 .language-selector {
 	position: absolute;
 	z-index: 1;

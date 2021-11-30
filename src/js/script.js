@@ -45,6 +45,11 @@ const init = () => {
 }
 
 const unload = () => {
+	if (document.querySelector('.menu-container')) {
+		console.log('unmount infinite circular text menu')
+		unmountMenu()
+	}
+
 	if (document.querySelector('.aboutme-swup-init')) {
 		console.log('unmount about me page')
 		unmountAboutMe()
