@@ -1,5 +1,5 @@
 :root {
-	--header-color-projects: #020024;
+	--projects-header-color: #020024;
 }
 
 /*
@@ -12,7 +12,7 @@ HEADER
 	align-items: center;
 	min-height: 250px;
 	height: 85vh;
-	background-color: var(--header-color-projects);
+	background-color: var(--projects-header-color);
 }
 
 #header-presentation h1 {
@@ -23,8 +23,8 @@ HEADER
 }
 
 /** MENU - BTN */
-.menu-btn-blue {
-	color: var(--header-color-projects);
+.menu-btn-projects {
+	color: var(--projects-header-color);
 }
 
 /**

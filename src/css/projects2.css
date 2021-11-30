@@ -1,0 +1,27 @@
+.projects2-container {
+	min-height: 100vh;
+	background: #c33764; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#1d2671,
+		#c33764
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right top,
+		#1d2671,
+		#c33764
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects2-container::before {
+	content: '';
+	position: fixed;
+	background: rgba(245, 245, 245, 0.849);
+	height: 90vh;
+	width: 90vw;
+	top: 5vh;
+	left: 5vw;
+	clip-path: polygon(0 75%, 2% 82%, 2% 96%, 7% 96%, 10% 100%, 0 100%);
+	/* 	clip-path: polygon(0 73%, 3rem 70%, 3rem 95%, 12% 95%, 15% 100%, 0 100%);
+ */
+}
