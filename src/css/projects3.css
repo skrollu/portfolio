@@ -1,0 +1,117 @@
+.projects3-container {
+	min-height: 200vh;
+}
+
+/* 
+.projects2-container .background::before,
+.projects2-container .background::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+	background: #c1f1f5;
+	height: 90vh;
+	width: 90vw;
+	top: 5vh;
+	left: 5vw;
+	clip-path: polygon(0 75%, 2% 82%, 2% 96%, 7% 96%, 10% 100%, 1% 100%, 0 95%);
+}
+
+.projects2-container::after {
+	clip-path: polygon(99% 0%, 90% 0%, 93% 4%, 98% 4%, 98% 9%, 100% 13%, 100% 3%);
+} 
+*/
+
+.projects3-container .background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100vh;
+	width: 100%;
+	background-image: url('../../public/img/theChosen1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#section-one {
+	min-height: 100vh;
+	margin: 50vh 5% 0;
+	display: flex;
+}
+
+#section-one .card {
+	height: 300px;
+	width: 30%;
+	padding: 2px 10px;
+
+	background-color: #ffffff0c;
+	border-right: rgba(255, 255, 255, 0.733) solid 1px;
+	box-shadow: inset -1px 0 1px 0px rgba(255, 255, 255, 0.301);
+}
+
+#section-one .card .title {
+	font-size: 6rem;
+	color: #fff;
+}
+
+#section-one .card .text {
+	font-size: 2rem;
+	color: #fff;
+	padding-left: 5px;
+	text-align: justify;
+}
+
+#section-one .line-container {
+	height: 100%;
+	overflow: hidden;
+}
+
+#section-one .line-container .line {
+	height: 200px;
+	width: 1000px;
+
+	background: white;
+}
+
+#section-one .line-container .line .flex-bubble {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#section-one .line-container .line .bubble {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background-color: green;
+}
+
+/**
+--------------------SECTION TWO ---------------------------
+*/
+
+#section-two {
+	position: relative;
+	height: 200vh;
+	color: rgb(255, 255, 255);
+	font-size: 10rem;
+	display: grid;
+	place-content: center;
+}
+
+.lerp-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1.25rem;
+	line-height: 1.1;
+}
+.lerp-wrap span {
+	display: inline-block;
+	font-size: clamp(32px, 5vw, 8vw);
+}
+
+/**
+--------------------SECTION THREE ---------------------------
+*/

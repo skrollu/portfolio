@@ -2,7 +2,7 @@ import { mountHeaderPresentation } from './projects-header'
 import { mountProjectDescriptions } from './projects-main'
 import { mountAboutMe, unmountAboutMe } from './aboutme'
 import { mountMenu, unmountMenu } from './menu'
-import { mountProjects2 } from './projects2'
+import { mountProjects3 } from './projects3'
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
 import SwupFadeTheme from '@swup/fade-theme'
@@ -32,6 +32,11 @@ const init = () => {
 	if (document.querySelector('.projects2-container')) {
 		console.log('mount Projects 2')
 		mountProjects2()
+	}
+
+	if (document.querySelector('.projects3-container')) {
+		console.log('mount Projects 3')
+		mountProjects3()
 	}
 
 	if (document.querySelector('#header-presentation')) {
