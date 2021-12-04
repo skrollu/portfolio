@@ -40,24 +40,31 @@
 }
 
 #section-one .card {
-	height: 300px;
+	height: 250px;
 	width: 30%;
-	padding: 2px 10px;
+	padding: 2px 10px 0;
 
 	background-color: #ffffff0c;
 	border-right: rgba(255, 255, 255, 0.733) solid 1px;
 	box-shadow: inset -1px 0 1px 0px rgba(255, 255, 255, 0.301);
+	overflow: hidden;
 }
 
-#section-one .card .title {
-	font-size: 6rem;
+#section-one .card .title,
+#section-one .card .title span {
+	display: inline-block;
+	font-size: 4rem;
 	color: #fff;
+}
+
+#section-one .card .title .bold {
+	font-weight: 600;
 }
 
 #section-one .card .text {
 	font-size: 2rem;
 	color: #fff;
-	padding-left: 5px;
+	padding: 25px 0 0 10px;
 	text-align: justify;
 }
 
@@ -109,7 +116,6 @@
 }
 .lerp-wrap span {
 	display: inline-block;
-	font-size: clamp(32px, 5vw, 8vw);
 }
 
 /**

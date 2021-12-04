@@ -5,6 +5,5 @@ export function mountProjects3() {
 	const bbb = new LocomotiveScroll({
 		el: document.querySelector('[data-scroll-container3]'),
 		smooth: true,
-		lerp: 0.2,
 	})
 }
