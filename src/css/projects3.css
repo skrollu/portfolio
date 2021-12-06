@@ -1,5 +1,5 @@
 .projects3-container {
-	min-height: 200vh;
+	position: absolute;
 }
 
 /* 
@@ -34,31 +34,18 @@
 }
 
 #section-one {
-	min-height: 100vh;
-	margin: 50vh 5% 0;
+	margin: 50vh 5% 200px;
 	display: flex;
 }
 
 #section-one .card {
-	height: 250px;
 	width: 30%;
-	padding: 2px 10px 0;
+	padding: 2px 10px 5px;
 
 	background-color: #ffffff0c;
 	border-right: rgba(255, 255, 255, 0.733) solid 1px;
 	box-shadow: inset -1px 0 1px 0px rgba(255, 255, 255, 0.301);
 	overflow: hidden;
-}
-
-#section-one .card .title,
-#section-one .card .title span {
-	display: inline-block;
-	font-size: 4rem;
-	color: #fff;
-}
-
-#section-one .card .title .bold {
-	font-weight: 600;
 }
 
 #section-one .card .text {
@@ -69,36 +56,131 @@
 }
 
 #section-one .line-container {
-	height: 100%;
-	overflow: hidden;
+	justify-self: center;
+	align-self: center;
 }
 
-#section-one .line-container .line {
-	height: 200px;
-	width: 1000px;
-
-	background: white;
-}
-
-#section-one .line-container .line .flex-bubble {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-#section-one .line-container .line .bubble {
-	height: 35px;
-	width: 35px;
-	border-radius: 50%;
-	background-color: green;
+#section-one .line-container .title {
+	margin: 0 auto;
+	padding: 5px;
+	background-color: #ffffff0c;
+	font-size: 4rem;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 /**
 --------------------SECTION TWO ---------------------------
 */
 
+#section-two {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 5rem 0;
+}
+
+#section-two .grid-panel {
+	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 1rem;
+	column-gap: 1rem;
+	padding: 10px;
+
+	background-color: #ffffff0c;
+	border-radius: 1rem;
+}
+
+/** 
+* GRID CARD
+*/
+#section-two .grid-panel .grid-card {
+	position: relative;
+	overflow: hidden;
+}
+
+#section-two .grid-panel .grid-card:hover {
+	box-shadow: 0.5rem 0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432),
+		-0.5rem -0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432),
+		-0.5rem 0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432),
+		0.5rem -0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432);
+}
+
+#section-two .grid-panel .grid-card img {
+	height: 100%;
+	width: 100%;
+}
+
+/** 
+* CARD TITLE
+*/
+#section-two .grid-panel .grid-card .card-title {
+	cursor: pointer;
+	position: absolute;
+	height: 35%;
+	bottom: -35%;
+	width: 100%;
+	background-color: #ffffff0c;
+
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	padding: 1rem 0;
+	transition: 0.4s bottom ease-out;
+}
+
+#section-two .grid-panel .grid-card:nth-child(3) .card-title {
+	color: black;
+}
+
+#section-two .grid-panel .grid-card:hover .card-title {
+	bottom: 0;
+}
+
+/**
+* SECTION TWO TITLE
+*/
+#section-two .section-title {
+	width: 30%;
+	padding: 0 1.5rem;
+	text-align: center;
+}
+
+#section-two .section-title h2 {
+	font-size: 5rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/**
+* MEDIA QUERIES 
+*/
+@media screen and (max-width: 800px) {
+	#section-two {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+	}
+
+	#section-two .section-title {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#section-two .grid-panel {
+		width: 90%;
+	}
+
+	#section-two .section-title h2 {
+		font-size: 3.5rem;
+	}
+}
+/*
 #section-two {
 	position: relative;
 	height: 200vh;
@@ -117,7 +199,7 @@
 .lerp-wrap span {
 	display: inline-block;
 }
-
+*/
 /**
 --------------------SECTION THREE ---------------------------
 */
