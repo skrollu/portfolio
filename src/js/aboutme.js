@@ -1,18 +1,17 @@
-import LocomotiveScroll from 'locomotive-scroll'
 import { gsap } from 'gsap'
 import { TextPlugin } from 'gsap/TextPlugin'
 
 let scroll
 
 export function mountAboutMe() {
-	scroll = new LocomotiveScroll({
+	/* scroll = new LocomotiveScroll({
 		el: document.querySelector('[data-scroll-container]'),
 		smooth: true,
 		direction: 'horizontal',
 		repeat: true,
 		getSpeed: !1,
 	})
-
+ */
 	// PRESENTATION TIMELINE
 	gsap.registerPlugin(TextPlugin)
 	const sentence = "Hello, I'm Mathieu Ibersien a young fullstack developer"
