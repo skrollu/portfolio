@@ -30,47 +30,87 @@
 	z-index: -1;
 	height: 100vh;
 	width: 100%;
-	background-image: url('../../public/img/theChosen1.jpg');
+	background-image: url('../../public/img/Blade-Runner-2049-1.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
+/** 
+* SECTION ONE
+*/
 #section-one {
-	margin: 50vh 5% 200px;
+	margin: 30vh 5% 200px;
 	display: flex;
 }
 
-#section-one .card {
+#section-one .card-container {
 	width: 30%;
-	padding: 2px 10px 5px;
+}
 
+#section-one .card {
+	padding: 10px 10px;
 	background-color: #ffffff0c;
-	border-right: rgba(255, 255, 255, 0.733) solid 1px;
+	border-radius: 15px;
 	box-shadow: inset -1px 0 1px 0px rgba(255, 255, 255, 0.301);
-	overflow: hidden;
+}
+
+#section-one .card .title {
+	font-size: 6.5rem;
+	font-weight: 600;
+	color: #fff;
 }
 
 #section-one .card .text {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: #fff;
-	padding: 25px 0 0 10px;
+	padding: 15px 0 0 10px;
 	text-align: justify;
 }
 
-#section-one .line-container {
-	justify-self: center;
-	align-self: center;
+#section-one .card .text .link {
+	color: rgb(38, 0, 63);
 }
 
-#section-one .line-container .title {
-	margin: 0 auto;
-	padding: 5px;
-	background-color: #ffffff0c;
-	font-size: 4rem;
-	text-transform: uppercase;
-	color: #fff;
+#section-one .scaffold-container {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
+#section-one .scaffold-container .scaffold-card {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+
+#section-one .scaffold-container .scaffold-card img {
+	height: 100%;
+	width: 100%;
+}
+
+#section-one .scaffold-container .scaffold-card .card-title {
+	cursor: pointer;
+	position: absolute;
+	height: 35%;
+	bottom: -35%;
+	width: 100%;
+	background-color: #00000073;
+
+	color: #ffffff;
+	font-size: 2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem 0;
+	transition: 0.4s bottom ease-out;
+}
+
+#section-one .scaffold-container .scaffold-card:hover .card-title {
+	bottom: 0;
+}
 /**
 --------------------SECTION TWO ---------------------------
 */
@@ -124,17 +164,16 @@
 	height: 35%;
 	bottom: -35%;
 	width: 100%;
-	background-color: #ffffff0c;
+	background-color: #00000073;
 
 	color: #fff;
 	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	padding: 1rem 0;
 	transition: 0.4s bottom ease-out;
-}
-
-#section-two .grid-panel .grid-card:nth-child(3) .card-title {
-	color: black;
 }
 
 #section-two .grid-panel .grid-card:hover .card-title {
