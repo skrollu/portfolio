@@ -39,7 +39,7 @@
 * SECTION ONE
 */
 #section-one {
-	margin: 30vh 5% 200px;
+	margin: 30vh 5% 0;
 	display: flex;
 }
 
@@ -55,7 +55,7 @@
 }
 
 #section-one .card .title {
-	font-size: 6.5rem;
+	font-size: 6rem;
 	font-weight: 600;
 	color: #fff;
 }
@@ -87,6 +87,7 @@
 #section-one .scaffold-container .scaffold-card img {
 	height: 100%;
 	width: 100%;
+	object-fit: cover;
 }
 
 #section-one .scaffold-container .scaffold-card .card-title {
@@ -111,6 +112,31 @@
 #section-one .scaffold-container .scaffold-card:hover .card-title {
 	bottom: 0;
 }
+
+/**
+* MEDIA QUERIES 
+*/
+@media screen and (max-width: 1500px) {
+	#section-one .card .title {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	#section-one {
+		flex-direction: column;
+		gap: 10rem;
+	}
+	#section-one .card-container,
+	#section-one .scaffold-container {
+		width: 100%;
+	}
+
+	#section-one .scaffold-container .scaffold-card img {
+		height: 200px;
+	}
+}
+
 /**
 --------------------SECTION TWO ---------------------------
 */
@@ -120,7 +146,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 5rem 0;
+	margin: 20rem 0;
 }
 
 #section-two .grid-panel {
@@ -198,21 +224,29 @@
 /**
 * MEDIA QUERIES 
 */
+@media screen and (max-width: 400px) {
+	#section-two {
+		margin: 0;
+	}
+
+	#section-two .section-title h2 {
+		font-size: 3.5rem;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	#section-two {
 		height: 100%;
 		width: 100%;
 		display: flex;
 		flex-direction: column-reverse;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
 	#section-two .section-title {
 		width: 80%;
 	}
-}
 
-@media screen and (max-width: 800px) {
 	#section-two .grid-panel {
 		width: 90%;
 	}

@@ -1,11 +1,13 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
+let timelineSectionOne = null
+let timelineSectionTwo = null
 
 export function mountProjects3() {
+	gsap.registerPlugin(ScrollTrigger)
 	mountSectionOne()
-	mountSectionTwo()
+	//mountSectionTwo()
 }
 
 function mountSectionOne() {
@@ -15,11 +17,10 @@ function mountSectionOne() {
 		'#section-one .scaffold-container .scaffold-card'
 	)
 
-	console.log(scaffoldCards)
-	const timeline = gsap.timeline()
+	timelineSectionOne = gsap.timeline()
 
-	/**LEFT CARD ANIMATION */
-	timeline.to(card, {
+	/** LEFT CARD ANIMATION */
+	timelineSectionOne.to(card, {
 		scrollTrigger: {
 			trigger: sectionOne,
 			scrub: 0.5,
@@ -30,9 +31,8 @@ function mountSectionOne() {
 		yPercent: 50,
 	})
 
-	//scaffoldCards.forEach((element) => {})
-
-	timeline.to(scaffoldCards, {
+	/** RIGHT SCAFFOLD ANIMATION */
+	timelineSectionOne.to(scaffoldCards, {
 		scrollTrigger: {
 			trigger: sectionOne,
 			scrub: 1,
@@ -46,10 +46,13 @@ function mountSectionOne() {
 }
 
 function mountSectionTwo() {
-	console.log('gsap')
-	gsap.from('.grid-panel', {
+	timelineSectionTwo = gsap.from('.grid-panel', {
 		scrollTrigger: '.grid-panel',
 		duration: 1,
 		x: -500,
 	})
+}
+
+export function unmountProjects3() {
+	timelineSectionOne = timelineSectionTwo = null
 }

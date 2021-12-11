@@ -2,7 +2,7 @@ import { mountHeaderPresentation } from './projects-header'
 import { mountProjectDescriptions } from './projects-main'
 import { mountAboutMe, unmountAboutMe } from './aboutme'
 import { mountMenu, unmountMenu } from './menu'
-import { mountProjects3 } from './projects3'
+import { mountProjects3, unmountProjects3 } from './projects3'
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
 import SwupFadeTheme from '@swup/fade-theme'
@@ -64,6 +64,10 @@ const unload = () => {
 	if (document.querySelector('.aboutme-swup-init')) {
 		console.log('unmount about me page')
 		unmountAboutMe()
+	}
+
+	if (document.querySelector('.projects3-container')) {
+		unmountProjects3()
 	}
 }
 
