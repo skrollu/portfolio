@@ -48,7 +48,7 @@
 }
 
 #section-one .card {
-	padding: 10px 10px;
+	padding: 1rem 1rem;
 	background-color: #ffffff0c;
 	border-radius: 15px;
 	box-shadow: inset -1px 0 1px 0px rgba(255, 255, 255, 0.301);
@@ -63,7 +63,7 @@
 #section-one .card .text {
 	font-size: 2.5rem;
 	color: #fff;
-	padding: 15px 0 0 10px;
+	padding: 15px 0 0 1rem;
 	text-align: justify;
 }
 
@@ -155,7 +155,7 @@
 	grid-template-columns: repeat(2, 1fr);
 	row-gap: 1rem;
 	column-gap: 1rem;
-	padding: 10px;
+	padding: 1rem;
 
 	background-color: #ffffff0c;
 	border-radius: 1rem;
@@ -179,6 +179,7 @@
 #section-two .grid-panel .grid-card img {
 	height: 100%;
 	width: 100%;
+	object-fit: cover;
 }
 
 /** 
@@ -255,26 +256,61 @@
 		font-size: 3.5rem;
 	}
 }
-/*
-#section-two {
-	position: relative;
-	height: 200vh;
-	color: rgb(255, 255, 255);
-	font-size: 10rem;
-	display: grid;
-	place-content: center;
-}
 
-.lerp-wrap {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 1.25rem;
-	line-height: 1.1;
-}
-.lerp-wrap span {
-	display: inline-block;
-}
-*/
 /**
 --------------------SECTION THREE ---------------------------
 */
+
+#section-three {
+}
+
+#section-three .section-title {
+	font-size: 4rem;
+	color: #fff;
+	text-align: center;
+
+	margin-bottom: 5rem;
+}
+
+#section-three .grid-panel {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	row-gap: 1rem;
+	column-gap: 2rem;
+	padding: 10rem 0;
+
+	background-color: #ffffff0c;
+}
+
+#section-three .grid-panel .grid-card {
+	position: relative;
+	overflow: hidden;
+}
+
+#section-three .grid-panel .grid-card:nth-child(2n + 1) {
+	text-align: right;
+}
+
+#section-three .grid-panel .grid-card img {
+	height: 100%;
+	object-fit: cover;
+}
+
+#section-three .grid-panel .grid-card .card-title {
+	cursor: pointer;
+	position: absolute;
+	height: 35%;
+	bottom: -35%;
+	width: 100%;
+	background-color: #00000073;
+
+	color: #fff;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem 0;
+	transition: 0.4s bottom ease-out;
+}
