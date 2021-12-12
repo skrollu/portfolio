@@ -52,9 +52,12 @@ function mountSectionTwo() {
 
 	/** ANIMATE LEFT GRID PANEL */
 	gsap.from(gridPanel, {
-		scrollTrigger: sectionTwo,
-		duration: 1,
-		x: -500,
+		scrollTrigger: {
+			trigger: sectionTwo,
+			start: 'top 90%',
+		},
+		duration: 1.5,
+		xPercent: -500,
 	})
 
 	/** ANIMATE RIGHT SECTION TITLE */
@@ -63,7 +66,8 @@ function mountSectionTwo() {
 			trigger: sectionTwo,
 			scrub: true,
 		},
-		yPercent: -80,
+		yPercent: -200,
+		duration: 1,
 	})
 
 	/**ANIMATE SECTION TWO */
@@ -86,9 +90,6 @@ function mountSectionThree() {
 	)
 	const gridCardsRight = document.querySelectorAll(
 		'#section-three .grid-panel .right'
-	)
-	const sectionTitle = document.querySelector(
-		'#section-three .section-title .title'
 	)
 
 	gsap.from(gridCardsLeft, {

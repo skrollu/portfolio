@@ -1,3 +1,7 @@
+.project3-body {
+	overflow-x: hidden;
+}
+
 .projects3-container {
 	height: 100%;
 	width: 100%;
@@ -275,7 +279,7 @@
 #section-three .grid-panel {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
+
 	row-gap: 1rem;
 	column-gap: 2rem;
 	padding: 10rem 0;
@@ -287,13 +291,16 @@
 	position: relative;
 	overflow: hidden;
 }
-
-#section-three .grid-panel .grid-card:nth-child(2n + 1) {
-	text-align: right;
+#section-three .grid-panel .left {
+	justify-self: right;
+}
+#section-three .grid-panel .right {
+	justify-self: left;
 }
 
 #section-three .grid-panel .grid-card img {
 	height: 100%;
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -313,4 +320,8 @@
 	text-align: center;
 	padding: 1rem 0;
 	transition: 0.4s bottom ease-out;
+}
+
+#section-three .grid-panel .grid-card:hover .card-title {
+	bottom: 0;
 }
