@@ -4,3 +4,5 @@ gsap-member
 dist-ssr
 *.local
 .vscode
+
+.npmrc
