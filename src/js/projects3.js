@@ -8,6 +8,7 @@ export function mountProjects3() {
 	mountSectionOne()
 	mountSectionTwo()
 	mountSectionThree()
+	mountSectionFour()
 }
 
 function mountSectionOne() {
@@ -120,6 +121,39 @@ function mountSectionThree() {
 		opacity: 0,
 		ease: 'power2.out',
 		stagger: 0.3,
+	})
+}
+
+function mountSectionFour() {
+	const sectionFour = document.querySelector('#section-four')
+	const title = document.querySelectorAll('#section-four .section-title .title')
+	const gridCards = document.querySelectorAll(
+		'#section-four .grid-panel .grid-card'
+	)
+
+	gsap.from(title, {
+		scrollTrigger: {
+			trigger: sectionFour,
+			start: 'top center',
+			scrub: true,
+		},
+		duration: 1,
+		xPercent: 80,
+		opacity: 0.5,
+	})
+
+	gsap.from(gridCards, {
+		scrollTrigger: {
+			trigger: sectionFour,
+			start: 'top center',
+			scrub: true,
+		},
+		stagger: {
+			each: 0.3,
+		},
+		duration: 1,
+		xPercent: 80,
+		opacity: 0.5,
 	})
 }
 

@@ -325,3 +325,63 @@
 #section-three .grid-panel .grid-card:hover .card-title {
 	bottom: 0;
 }
+
+/**
+* SECTION FOUR
+*/
+
+#section-four {
+	padding-bottom: 500px;
+}
+
+#section-four .section-title {
+	font-size: 4rem;
+	color: #fff;
+	text-align: left;
+
+	margin: 10rem 0 5rem 2rem;
+}
+
+#section-four .grid-panel {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	row-gap: 1rem;
+	column-gap: 2rem;
+	padding: 10rem 10%;
+
+	background-color: #ffffff0c;
+}
+
+#section-four .grid-panel .grid-card {
+	position: relative;
+	overflow: hidden;
+}
+
+#section-four .grid-panel .grid-card img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+#section-four .grid-panel .grid-card .card-title {
+	cursor: pointer;
+	position: absolute;
+	height: 35%;
+	bottom: -35%;
+	width: 100%;
+	background-color: #00000073;
+
+	color: #fff;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem 0;
+	transition: 0.4s bottom ease-out;
+}
+
+#section-four .grid-panel .grid-card:hover .card-title {
+	bottom: 0;
+}
