@@ -83,38 +83,7 @@
 }
 
 #section-one .scaffold-container .scaffold-card {
-	position: relative;
-	overflow: hidden;
 	margin-bottom: 2rem;
-}
-
-#section-one .scaffold-container .scaffold-card img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-#section-one .scaffold-container .scaffold-card .card-title {
-	cursor: pointer;
-	position: absolute;
-	height: 35%;
-	bottom: -35%;
-	width: 100%;
-	background-color: #00000073;
-
-	color: #ffffff;
-	font-size: 2rem;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 1rem 0;
-	transition: 0.4s bottom ease-out;
-}
-
-#section-one .scaffold-container .scaffold-card:hover .card-title {
-	bottom: 0;
 }
 
 /**
@@ -163,52 +132,6 @@
 
 	background-color: #ffffff0c;
 	border-radius: 1rem;
-}
-
-/** 
-* GRID CARD
-*/
-#section-two .grid-panel .grid-card {
-	position: relative;
-	overflow: hidden;
-}
-
-#section-two .grid-panel .grid-card:hover {
-	box-shadow: 0.5rem 0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432),
-		-0.5rem -0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432),
-		-0.5rem 0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432),
-		0.5rem -0.5rem 0.2rem 0.2rem rgba(161, 71, 184, 0.432);
-}
-
-#section-two .grid-panel .grid-card img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-/** 
-* CARD TITLE
-*/
-#section-two .grid-panel .grid-card .card-title {
-	cursor: pointer;
-	position: absolute;
-	height: 35%;
-	bottom: -35%;
-	width: 100%;
-	background-color: #00000073;
-
-	color: #fff;
-	font-size: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 1rem 0;
-	transition: 0.4s bottom ease-out;
-}
-
-#section-two .grid-panel .grid-card:hover .card-title {
-	bottom: 0;
 }
 
 /**
@@ -265,9 +188,6 @@
 --------------------SECTION THREE ---------------------------
 */
 
-#section-three {
-}
-
 #section-three .section-title {
 	font-size: 4rem;
 	color: #fff;
@@ -287,43 +207,11 @@
 	background-color: #ffffff0c;
 }
 
-#section-three .grid-panel .grid-card {
-	position: relative;
-	overflow: hidden;
-}
 #section-three .grid-panel .left {
 	justify-self: right;
 }
 #section-three .grid-panel .right {
 	justify-self: left;
-}
-
-#section-three .grid-panel .grid-card img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-#section-three .grid-panel .grid-card .card-title {
-	cursor: pointer;
-	position: absolute;
-	height: 35%;
-	bottom: -35%;
-	width: 100%;
-	background-color: #00000073;
-
-	color: #fff;
-	font-size: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 1rem 0;
-	transition: 0.4s bottom ease-out;
-}
-
-#section-three .grid-panel .grid-card:hover .card-title {
-	bottom: 0;
 }
 
 /**
@@ -339,7 +227,11 @@
 	color: #fff;
 	text-align: left;
 
-	margin: 10rem 0 5rem 2rem;
+	margin: 10rem 0 5rem 4rem;
+}
+
+#section-four .section-title .titleChar {
+	display: inline-block;
 }
 
 #section-four .grid-panel {
@@ -353,24 +245,32 @@
 	background-color: #ffffff0c;
 }
 
-#section-four .grid-panel .grid-card {
+/**
+* SECTION FIVE
+*/
+
+/**
+* PROJECT CARD
+*/
+.project-card {
 	position: relative;
 	overflow: hidden;
+	border-radius: 1rem;
+	background-color: #1b1b1b;
 }
 
-#section-four .grid-panel .grid-card img {
+.project-card img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
 
-#section-four .grid-panel .grid-card .card-title {
+.project-card .card-title {
 	cursor: pointer;
 	position: absolute;
-	height: 35%;
-	bottom: -35%;
+	bottom: 0;
+	background-color: #1b1b1bbd;
 	width: 100%;
-	background-color: #00000073;
 
 	color: #fff;
 	font-size: 2rem;
@@ -378,10 +278,5 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 1rem 0;
-	transition: 0.4s bottom ease-out;
-}
-
-#section-four .grid-panel .grid-card:hover .card-title {
-	bottom: 0;
+	padding: 0.5rem 0;
 }
