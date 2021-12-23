@@ -297,7 +297,6 @@
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50% 50%;
 	gap: 1rem;
-	justify-items: center;
 }
 .project-footer .footer-grid .grid-title {
 	font-size: 2rem;
@@ -313,7 +312,12 @@
 }
 
 .project-footer .footer-grid .grid-element {
+	height: 100%;
+	width: 100%;
 	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .project-footer .footer-grid .grid-1 {
@@ -358,4 +362,9 @@
 	text-align: center;
 	font-size: 2rem;
 	color: #1b1b1bbd;
+}
+.project-footer .signature .name {
+	border-top: solid 1px #000;
+	margin: 0 15%;
+	padding: 3rem 0;
 }
