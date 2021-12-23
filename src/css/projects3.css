@@ -47,31 +47,25 @@
 	display: flex;
 }
 
-#section-one .card-container {
+#section-one .description-container {
 	width: 30%;
 }
 
-#section-one .card {
+#section-one .description {
 	padding: 1rem 1rem;
 	background-color: #ffffff0c;
 	border-radius: 15px;
 	box-shadow: inset -1px 0 1px 0px rgba(255, 255, 255, 0.301);
 }
 
-#section-one .card .title {
-	font-size: 6rem;
-	font-weight: 600;
-	color: #fff;
-}
-
-#section-one .card .text {
+#section-one .description .text {
 	font-size: 2.5rem;
 	color: #fff;
 	padding: 15px 0 0 1rem;
 	text-align: justify;
 }
 
-#section-one .card .text .link {
+#section-one .description .text .link {
 	color: rgb(38, 0, 63);
 }
 
@@ -122,6 +116,12 @@
 	margin: 20rem 0;
 }
 
+#section-two .section-title {
+	width: 30%;
+	padding: 0 1.5rem;
+	text-align: center;
+}
+
 #section-two .grid-panel {
 	width: 70%;
 	display: grid;
@@ -132,21 +132,6 @@
 
 	background-color: #ffffff0c;
 	border-radius: 1rem;
-}
-
-/**
-* SECTION TWO TITLE
-*/
-#section-two .section-title {
-	width: 30%;
-	padding: 0 1.5rem;
-	text-align: center;
-}
-
-#section-two .section-title h2 {
-	font-size: 5rem;
-	text-transform: uppercase;
-	color: #fff;
 }
 
 /**
@@ -187,15 +172,6 @@
 /**
 --------------------SECTION THREE ---------------------------
 */
-
-#section-three .section-title {
-	font-size: 4rem;
-	color: #fff;
-	text-align: center;
-
-	margin-bottom: 5rem;
-}
-
 #section-three .grid-panel {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -219,18 +195,15 @@
 */
 
 #section-four {
-	padding-bottom: 500px;
+	min-height: 80vh;
 }
 
 #section-four .section-title {
-	font-size: 4rem;
-	color: #fff;
 	text-align: left;
-
 	margin: 10rem 0 5rem 4rem;
 }
 
-#section-four .section-title .titleChar {
+#section-four .section-title .title .titleChar {
 	display: inline-block;
 }
 
@@ -248,6 +221,34 @@
 /**
 * SECTION FIVE
 */
+#section-five .section-title {
+	margin: 0 2rem 10rem;
+
+	text-align: right;
+}
+
+#section-five .section-title .title .titleChar {
+	display: inline-block;
+}
+
+#section-five .grid-panel {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	row-gap: 1rem;
+	column-gap: 2rem;
+	padding: 10rem 10%;
+
+	background-color: #ffffff0c;
+}
+
+/**
+* SECTION TITLE
+*/
+.section-title {
+	font-size: 5rem;
+	color: #fff;
+}
 
 /**
 * PROJECT CARD
@@ -279,4 +280,82 @@
 	align-items: center;
 	text-align: center;
 	padding: 0.5rem 0;
+}
+
+/**
+* FOOTER
+*/
+.project-footer img {
+	height: 30px;
+}
+.project-footer {
+	padding: 7rem 2rem 5rem;
+	background-color: #fff;
+}
+.project-footer .footer-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	gap: 1rem;
+	justify-items: center;
+}
+.project-footer .footer-grid .grid-title {
+	font-size: 2rem;
+}
+.project-footer .footer-grid .grid-title .inner-title {
+	font-size: 1.7rem;
+}
+
+.project-footer .footer-grid ul li {
+	list-style-type: none;
+	padding: 0 2rem;
+	font-size: 1.5rem;
+}
+
+.project-footer .footer-grid .grid-element {
+	padding: 1rem;
+}
+
+.project-footer .footer-grid .grid-1 {
+	grid-column: 1/2;
+	grid-row: 1/3;
+
+	padding-right: 3rem;
+	border-right: 1px solid #000;
+}
+
+.project-footer .footer-grid .grid-2 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #000;
+}
+
+.project-footer .footer-grid .grid-2 .grid-title {
+	font-size: 1.5rem;
+}
+
+.project-footer .footer-grid .grid-3 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	justify-self: baseline;
+}
+
+.project-footer .footer-grid .grid-3 ul {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+}
+.project-footer .footer-grid .grid-3 li {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.project-footer .signature {
+	padding: 3rem 0 0;
+	text-align: center;
+	font-size: 2rem;
+	color: #1b1b1bbd;
 }

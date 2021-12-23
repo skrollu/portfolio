@@ -1,5 +1,6 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import charming from 'charming'
 
 let timelineSectionOne = null
 
@@ -9,6 +10,7 @@ export function mountProjects3() {
 	mountSectionTwo()
 	mountSectionThree()
 	mountSectionFour()
+	mountSectionFive()
 }
 
 function mountSectionOne() {
@@ -126,34 +128,86 @@ function mountSectionThree() {
 
 function mountSectionFour() {
 	const sectionFour = document.querySelector('#section-four')
-	const title = document.querySelectorAll('#section-four .section-title .title')
-	const gridCards = document.querySelectorAll(
-		'#section-four .grid-panel .grid-card'
+	const title = document.querySelector('#section-four .section-title .title')
+	charming(title, {
+		setClassName: (index) => `titleChar titleChar-${index}`,
+	})
+	const titleArray = document.querySelectorAll(
+		'#section-four .section-title .title .titleChar'
+	)
+	const projectCards = document.querySelectorAll(
+		'#section-four .grid-panel .project-card'
 	)
 
-	gsap.from(title, {
+	gsap.from(titleArray, {
 		scrollTrigger: {
 			trigger: sectionFour,
-			start: 'top center',
-			scrub: true,
-		},
-		duration: 1,
-		xPercent: 80,
-		opacity: 0.5,
-	})
-
-	gsap.from(gridCards, {
-		scrollTrigger: {
-			trigger: sectionFour,
-			start: 'top center',
-			scrub: true,
+			start: 'top 60%',
 		},
 		stagger: {
-			each: 0.3,
+			each: 0.035,
 		},
-		duration: 1,
-		xPercent: 80,
+		duration: 0.8,
+		x: 1500,
+		opacity: 0,
+	})
+
+	gsap.from(projectCards, {
+		scrollTrigger: {
+			trigger: sectionFour,
+			start: 'top 35%',
+		},
+		stagger: {
+			each: 0.1,
+		},
+		duration: 0.4,
+		x: -1000,
 		opacity: 0.5,
+	})
+}
+
+function mountSectionFive() {
+	// Tried to add collapse scrub effect (gravity) cf locomotive scroll speed + delay
+	/*
+	const sectionFive = document.querySelector('#section-five')
+	const title = document.querySelector('#section-five .section-title .title')
+	charming(title, {
+		setClassName: (index) => `titleChar titleChar-${index}`,
+	})
+	const titleNodeList = document.querySelectorAll(
+		'#section-five .section-title .title .titleChar'
+	)
+
+	//convert Node List to Array and reverse the titleArray
+	const titleArray = Array.from(titleNodeList)
+	titleArray.reverse()
+
+	gsap.to(titleNodeList, {
+		scrollTrigger: {
+			trigger: sectionFive,
+			start: 'top 90%',
+			end: 'bottom top',
+			scrub: 0.5,
+		},
+		stagger: {
+			each: 0.01,
+		},
+		yPercent: 150,
+		duration: 1,
+	})
+	*/
+
+	const sectionFive = document.querySelector('#section-five')
+	const title = document.querySelector('#section-five .section-title .title')
+	gsap.from(title, {
+		scrollTrigger: {
+			trigger: sectionFive,
+			start: 'top center',
+		},
+		opacity: 0,
+		scale: 3,
+		xPercent: 100,
+		duration: 0.4,
 	})
 }
 
