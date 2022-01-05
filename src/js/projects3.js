@@ -20,10 +20,10 @@ function mountSectionOne() {
 		'#section-one .scaffold-container .scaffold-card'
 	)
 
-	timelineSectionOne = gsap.timeline()
+	//timelineSectionOne = gsap.timeline()
 
 	/** LEFT CARD ANIMATION */
-	timelineSectionOne.to(card, {
+	/* 	timelineSectionOne.to(card, {
 		scrollTrigger: {
 			trigger: sectionOne,
 			scrub: 0.5,
@@ -32,9 +32,9 @@ function mountSectionOne() {
 
 		yPercent: 50,
 	})
-
+ */
 	/** RIGHT SCAFFOLD ANIMATION */
-	timelineSectionOne.to(scaffoldCards, {
+	/* 	timelineSectionOne.to(scaffoldCards, {
 		scrollTrigger: {
 			trigger: sectionOne,
 			scrub: 1,
@@ -43,7 +43,7 @@ function mountSectionOne() {
 
 		xPercent: -35,
 		stagger: 0.15,
-	})
+	}) */
 }
 
 function mountSectionTwo() {
@@ -59,31 +59,19 @@ function mountSectionTwo() {
 			trigger: sectionTwo,
 			start: 'top 90%',
 		},
-		duration: 1.5,
+		duration: 0.7,
 		xPercent: -500,
 	})
 
 	/** ANIMATE RIGHT SECTION TITLE */
-	gsap.to(sectionTitle, {
+	/* 	gsap.to(sectionTitle, {
 		scrollTrigger: {
 			trigger: sectionTwo,
 			scrub: true,
 		},
 		yPercent: -200,
 		duration: 1,
-	})
-
-	/**ANIMATE SECTION TWO */
-	/*
-	gsap.to(sectionTwo, {
-		scrollTrigger: {
-			trigger: sectionTwo,
-			scrub: true,
-			start: '20% center',
-		},
-		yPercent: 30,
-	})
-	*/
+	}) */
 }
 
 function mountSectionThree() {
@@ -161,8 +149,9 @@ function mountSectionFour() {
 			each: 0.1,
 		},
 		duration: 0.4,
-		x: -1000,
-		opacity: 0.5,
+		x: -2000,
+		skewX: -20,
+		skewY: 30,
 	})
 }
 
